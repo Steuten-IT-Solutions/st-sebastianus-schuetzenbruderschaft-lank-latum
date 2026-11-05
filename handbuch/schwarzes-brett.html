@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schwarzes Brett – Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+/* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
+:root {
+  --font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --primary: #1b5e20;
+  --primary-deep: #103613;
+  --primary-ink: #020602;
+  --on-primary-soft: #d6e2d7;
+  --accent-on-primary: #e2c876;
+  --bar-top: #103613;
+  --bar-bottom: #020602;
+  --on-bar-muted: #9fafa1;
+  --primary-text: #1b5e20;
+  --on-primary: #ffffff;
+  --accent: #d4af37;
+  --accent-light: #e2c876;
+  --accent-dark: #80681b;
+  --on-accent: #111418;
+  --bg: #eff2ed;
+  --card: #ffffff;
+  --ink: #17201d;
+  --ink-2: #474e4b;
+  --muted: #6a6f6b;
+  --line: #dae3d9;
+  --line-strong: #c0d1c0;
+  --good: #1f6b3a;
+  --danger: #a3301a;
+  --warn: #9c4a14;
+  --warn-surface: #9c4a14;
+  --on-warn: #ffffff;
+  --danger-surface: #b3261e;
+  --on-danger: #ffffff;
+  --hint-strong: #020602;
+  --hint-text: #474e4b;
+  --accent-text: #1b5e20;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #37c142;
+    --accent-text: #ddc061;
+    --bg: #0d210e;
+    --card: #153218;
+    --ink: #e9e7e2;
+    --ink-2: #bdbfb8;
+    --muted: #91988d;
+    --line: #244c27;
+    --line-strong: #326736;
+    --good: #6fd08f;
+    --danger: #f08a73;
+    --warn: #f0a868;
+    --accent-dark: #ddc061;
+    --hint-strong: #ddc061;
+    --hint-text: #bdbfb8;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg, #f4f5f2); color: var(--ink, #1c2321); }
+header { background: var(--primary, #2f5d8a); color: var(--on-primary, #fff); border-bottom: 4px solid var(--accent, #d9a441); }
+header .wrap { display: flex; gap: 14px; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+header img { width: 48px; height: 48px; object-fit: contain; }
+header a { color: inherit; text-decoration: none; font-weight: 700; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+main { padding: 24px 0 40px; }
+h1 { font-family: var(--font-head, inherit); font-size: 1.7rem; line-height: 1.2; margin: 0 0 14px; }
+h2 { font-family: var(--font-head, inherit); font-size: 1.25rem; margin: 26px 0 8px; color: var(--primary-text, inherit); }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--primary-text, #2f5d8a); }
+code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
+.hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
+.gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
+.gruppe ul { padding-left: 1.2em; }
+.wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
+footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</a></div></header>
+<main class="wrap">
+<h1>Schwarzes Brett</h1><p class="wenn">Nur, wenn Schwarzes Brett eingeschaltet ist.</p><p>Am <strong>Schwarzes Brett</strong> stehen dringende Nachrichten, z. B. „Training fällt heute aus“ oder „Treffpunkt geändert“, und für Mitglied die laufenden Umfragen. Der Titel neuer Einträge erscheint als farbiges Banner oben auf jeder Seite der App; auf dieser Seite liest du die Nachrichten vollständig nach.</p>
+<figure class="hilfe-bild"><img src="bilder/schwarzes-brett.jpg" alt="Die Seite des Schwarzes Bretts mit aktuellen Nachrichten und laufenden Umfragen" loading="lazy"><figcaption>Die Seite des Schwarzes Bretts mit aktuellen Nachrichten und laufenden Umfragen</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Hast du unten <strong>Intern</strong>, tippe dort auf den Knopf <strong>Schwarzes Brett</strong>. Oder tippe im Banner oben auf den Titel einer Nachricht oder auf <strong>Brett öffnen</strong>. Hast du eine Benachrichtigung oder eine Mail zu einer neuen Nachricht bekommen, öffnet ein Tipp darauf bzw. auf <strong>in der App ansehen</strong> ebenfalls diese Seite.</p>
+<p>Das Banner erscheint nur, solange es eine Nachricht gibt oder eine laufende Umfrage, auf die du noch nicht geantwortet hast.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Aktuelle Nachrichten</strong>: jede Nachricht mit dem Namen der Person, die sie geschrieben hat, der Uhrzeit (bei einer geänderten Nachricht mit „(geändert)“), dem Titel, dem vollständigen Text mit Bildern, den Anhängen (📎, ein Tipp lädt die Datei herunter) und <strong>Sichtbar bis</strong> mit Tag und Uhrzeit. Gibt es keine, steht dort <strong>Zurzeit gibt es keine Nachrichten.</strong></li><li><strong>Laufende Umfragen</strong>: nur für Mitglied, wenn die St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V. Umfragen nutzt. Jede Umfrage mit ihrem Ende, der Frage und dem Hinweis <strong>offen</strong> (noch nicht geantwortet) oder <strong>beantwortet</strong>.</li><li><strong>Teilnehmen</strong> bzw. <strong>Antwort ansehen</strong>: öffnet die Umfrage. Dort antwortest du oder siehst deine Antwort und die Ergebnisse.</li><li><strong>Beendete Umfragen</strong>: öffnet die Liste aller Umfragen, auch der beendeten.</li></ul>
+<h2>Das Banner oben auf jeder Seite</h2>
+<p>Solange es gültige Einträge gibt, steht oben auf jeder Seite der App (außer auf dieser) ein farbiges Banner. Es zeigt die neueste Nachricht mit Namen, Uhrzeit und Titel; ein Tipp auf den Titel öffnet die ganze Nachricht. Sehr lange Titel kürzt das Banner mit „…“. Laufende Umfragen, auf die du noch nicht geantwortet hast, stehen ebenfalls darin, jeweils mit dem Knopf <strong>Teilnehmen</strong>.</p>
+<figure class="hilfe-bild"><img src="bilder/schwarzes-brett-banner.jpg" alt="Das Banner mit einer Nachricht und dem Knopf +1 weitere" loading="lazy"><figcaption>Das Banner mit einer Nachricht und dem Knopf +1 weitere</figcaption></figure>
+<ul><li><strong>+1 weitere</strong> (bzw. <strong>+2 weitere</strong> …): klappt die übrigen Einträge auf. <strong>Weniger anzeigen</strong> klappt sie wieder zu.</li><li><strong>Brett öffnen</strong>: öffnet diese Seite.</li><li><strong>×</strong>: blendet den Eintrag auf diesem Gerät aus.</li></ul>
+<figure class="hilfe-bild"><img src="bilder/schwarzes-brett-banner-mehr.jpg" alt="Das aufgeklappte Banner mit einer Nachricht und einer Umfrage" loading="lazy"><figcaption>Das aufgeklappte Banner mit einer Nachricht und einer Umfrage</figcaption></figure>
+<h2>So gehst du vor</h2>
+<h3>Eine Nachricht ausblenden</h3>
+<ol><li>Tippe im Banner rechts neben der Nachricht auf <strong>×</strong>.</li><li>Die Nachricht verschwindet aus dem Banner. Auf dieser Seite bleibt sie sichtbar.</li></ol>
+<p>Hast du alle Einträge ausgeblendet, bleibt oben eine schmale Zeile, z. B. <strong>Schwarzes Brett · 2 ausgeblendet</strong>, mit <strong>Brett öffnen</strong>. Sie verschwindet, sobald die Einträge abgelaufen sind.</p>
+<figure class="hilfe-bild"><img src="bilder/schwarzes-brett-ausgeblendet.jpg" alt="Die schmale Zeile, wenn alle Einträge ausgeblendet sind" loading="lazy"><figcaption>Die schmale Zeile, wenn alle Einträge ausgeblendet sind</figcaption></figure>
+<h2>Gut zu wissen</h2>
+<ul><li>Jede Nachricht steht bis zu dem Zeitpunkt, den die Person beim Schreiben gewählt hat (meist <strong>24 Stunden</strong>), und verschwindet dann von selbst, auch ohne Netz, wenn die App sie schon geladen hatte. Abgelaufene Nachrichten gibt es hier nicht mehr; das Brett ist kein Archiv. Zeiten zeigt die App immer in der Uhrzeit deines Geräts.</li><li>Ausblenden gilt nur für das Gerät, auf dem du es tust. Wird eine ausgeblendete Nachricht oder Umfrage danach geändert, erscheint sie wieder im Banner, damit du die Änderung mitbekommst.</li><li>Hast du auf eine Umfrage geantwortet, steht sie nicht mehr im Banner, aber weiter auf dieser Seite.</li><li>Nachrichten können formatiert sein und Bilder enthalten. Links öffnen sich in einem neuen Fenster.</li><li>Bei einer neuen Nachricht bekommst du eine Benachrichtigung mit ihrem Titel, wenn du die Art <strong>Schwarzes Brett: dringende Nachrichten</strong> für dein Gerät eingeschaltet hast (siehe <a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a>). Wer schreibt, kann die Benachrichtigung auch weglassen. Wird eine Nachricht nur geändert, kommt keine neue Benachrichtigung.</li><li>Hat die St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V. den Mailversand eingerichtet, kommen neue Nachrichten auch per Mail an deine hinterlegte Adresse. Abschalten kannst du das unter <strong>Meins → Konto</strong> mit dem Schalter bei <strong>Benachrichtigungen</strong>. Beim Ändern kommt keine neue Mail.</li><li>Das Schwarzes Brett sehen Mitglied und Personen mit dem internen Kalender (z. B. Anwärter). Umfragen gibt es nur für Mitglied.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a></li><li><a href="signatur.html" data-seite="signatur">Signatur</a></li></ul>
+</main>
+<footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-Mail einrichten – Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+/* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
+:root {
+  --font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --primary: #1b5e20;
+  --primary-deep: #103613;
+  --primary-ink: #020602;
+  --on-primary-soft: #d6e2d7;
+  --accent-on-primary: #e2c876;
+  --bar-top: #103613;
+  --bar-bottom: #020602;
+  --on-bar-muted: #9fafa1;
+  --primary-text: #1b5e20;
+  --on-primary: #ffffff;
+  --accent: #d4af37;
+  --accent-light: #e2c876;
+  --accent-dark: #80681b;
+  --on-accent: #111418;
+  --bg: #eff2ed;
+  --card: #ffffff;
+  --ink: #17201d;
+  --ink-2: #474e4b;
+  --muted: #6a6f6b;
+  --line: #dae3d9;
+  --line-strong: #c0d1c0;
+  --good: #1f6b3a;
+  --danger: #a3301a;
+  --warn: #9c4a14;
+  --warn-surface: #9c4a14;
+  --on-warn: #ffffff;
+  --danger-surface: #b3261e;
+  --on-danger: #ffffff;
+  --hint-strong: #020602;
+  --hint-text: #474e4b;
+  --accent-text: #1b5e20;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #37c142;
+    --accent-text: #ddc061;
+    --bg: #0d210e;
+    --card: #153218;
+    --ink: #e9e7e2;
+    --ink-2: #bdbfb8;
+    --muted: #91988d;
+    --line: #244c27;
+    --line-strong: #326736;
+    --good: #6fd08f;
+    --danger: #f08a73;
+    --warn: #f0a868;
+    --accent-dark: #ddc061;
+    --hint-strong: #ddc061;
+    --hint-text: #bdbfb8;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg, #f4f5f2); color: var(--ink, #1c2321); }
+header { background: var(--primary, #2f5d8a); color: var(--on-primary, #fff); border-bottom: 4px solid var(--accent, #d9a441); }
+header .wrap { display: flex; gap: 14px; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+header img { width: 48px; height: 48px; object-fit: contain; }
+header a { color: inherit; text-decoration: none; font-weight: 700; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+main { padding: 24px 0 40px; }
+h1 { font-family: var(--font-head, inherit); font-size: 1.7rem; line-height: 1.2; margin: 0 0 14px; }
+h2 { font-family: var(--font-head, inherit); font-size: 1.25rem; margin: 26px 0 8px; color: var(--primary-text, inherit); }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--primary-text, #2f5d8a); }
+code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
+.hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
+.gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
+.gruppe ul { padding-left: 1.2em; }
+.wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
+footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</a></div></header>
+<main class="wrap">
+<h1>E-Mail einrichten</h1><p>Hier trägst du die Kompanieadresse und den Mailserver ein. Darüber verschickt die App Mails, z. B. Nachrichten aus dem Bereich <strong>Schwarzes Brett</strong> an alle Mitglied und die E-Mails aus dem Bereich <strong>E-Mails</strong> in der Verwaltung. Ohne diese Angaben gibt es beim Schreiben am Brett keinen Haken <strong>E-Mail senden</strong> und im Bereich <strong>E-Mails</strong> kein Formular.</p>
+<figure class="hilfe-bild"><img src="bilder/admin-email.jpg" alt="Die Seite E-Mail in den Einstellungen" loading="lazy"><figcaption>Die Seite E-Mail in den Einstellungen</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong>, dann auf <strong>Einstellungen</strong> und auf <strong>E-Mail</strong>.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Kompanieadresse (Absender)</strong>: die Adresse, von der die Mails kommen, z. B. info@… Antworten und nicht zustellbare Mails landen in diesem Postfach.</li><li><strong>Absendername</strong>: der Name, der als Absender erscheint. Bleibt das Feld leer, ist es der Name der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V..</li><li><strong>Mailserver (SMTP)</strong>, <strong>Port</strong>, <strong>Verschlüsselung</strong>, <strong>Benutzername</strong>, <strong>Passwort</strong>: die Zugangsdaten zum Postausgang dieses Postfachs.</li><li><strong>Versand in Portionen</strong>: für Hoster, die nur eine bestimmte Zahl Mails pro Stunde erlauben.</li><li><strong>Verbindung prüfen</strong> und <strong>Testmail senden</strong>: erscheinen, sobald Adresse und Mailserver gespeichert sind.</li><li>Darunter: wie groß eine Mail höchstens sein darf (wenn der Mailserver das meldet) und wie viele Mails noch auf den Versand warten.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Den Mailversand einrichten</h3>
+<ol><li>Trage die <strong>Kompanieadresse</strong> ein.</li><li>Trage <strong>Mailserver (SMTP)</strong>, <strong>Port</strong> und <strong>Verschlüsselung</strong> ein. Diese Angaben stehen beim Anbieter des Postfachs (Hoster oder Mailanbieter), meist unter „SMTP“ oder „Postausgangsserver“. Üblich sind Port 587 mit STARTTLS oder Port 465 mit SSL/TLS.</li><li>Trage <strong>Benutzername</strong> (meist die Mailadresse) und <strong>Passwort</strong> des Postfachs ein.</li><li>Tippe auf <strong>Speichern</strong>.</li><li>Tippe auf <strong>Verbindung prüfen</strong>. Klappt es, steht dort, bis zu welcher Größe der Mailserver Mails annimmt.</li><li>Tippe auf <strong>Testmail senden</strong>. Ohne Angabe geht sie an deine eigene Adresse; schau in deinem Postfach nach.</li></ol>
+<h3>Den Versand in Portionen einstellen</h3>
+<ol><li>Tippe auf <strong>Versand in Portionen</strong>.</li><li>Trage bei <strong>Mails je Portion</strong> ein, wie viele Mails die App auf einmal verschickt, und bei <strong>Pause (Minuten)</strong>, wie lange sie danach wartet.</li><li>Tippe auf <strong>Speichern</strong>.</li></ol>
+<p>0 bedeutet: alle auf einmal bzw. ohne Pause. So ist es am Anfang eingestellt.</p>
+<h2>Gut zu wissen</h2>
+<ul><li>Das Passwort zeigt die App nie wieder an. Lässt du das Feld leer, bleibt das gespeicherte Passwort.</li><li>Die Mails verschickt die App im Hintergrund, jede einzeln an eine Person. Klappt eine Mail nicht, versucht sie es später noch einmal (bis zu fünfmal). Wer eine Nachricht am Brett schreibt, sieht im <strong>Verlauf</strong>, an wen sie ging.</li><li>Jede Person kann Mails vom Brett unter <strong>Meins → Konto</strong> abschalten. Wer keine Mailadresse hat, bekommt keine Mail.</li><li>Beim Versand in Portionen schaut die App alle 15 Minuten nach; eine Pause dauert deshalb mindestens bis zum nächsten Mal.</li><li>Mailserver der Empfänger können kleinere Grenzen haben als euer eigener; abgelehnte Mails kommen als Rückläufer an die Kompanieadresse.</li></ul>
+<p class="hinweis"><strong>Für Fortgeschrittene:</strong> Die App verschickt über SMTP mit PHPMailer, in WordPress mit der Kopie, die WordPress mitbringt (nicht über wp_mail()). Die Höchstgröße liest sie aus der Antwort des Servers (SIZE nach RFC 1870).</p>
+<h2>Siehe auch</h2>
+<ul><li><a href="admin-einstellungen.html" data-seite="admin-einstellungen">Einstellungen</a></li></ul>
+</main>
+<footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
+</body>
+</html>

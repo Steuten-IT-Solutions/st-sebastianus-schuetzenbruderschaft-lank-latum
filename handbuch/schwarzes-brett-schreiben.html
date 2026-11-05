@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ans Schwarzes Brett schreiben – Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+/* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
+:root {
+  --font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --primary: #1b5e20;
+  --primary-deep: #103613;
+  --primary-ink: #020602;
+  --on-primary-soft: #d6e2d7;
+  --accent-on-primary: #e2c876;
+  --bar-top: #103613;
+  --bar-bottom: #020602;
+  --on-bar-muted: #9fafa1;
+  --primary-text: #1b5e20;
+  --on-primary: #ffffff;
+  --accent: #d4af37;
+  --accent-light: #e2c876;
+  --accent-dark: #80681b;
+  --on-accent: #111418;
+  --bg: #eff2ed;
+  --card: #ffffff;
+  --ink: #17201d;
+  --ink-2: #474e4b;
+  --muted: #6a6f6b;
+  --line: #dae3d9;
+  --line-strong: #c0d1c0;
+  --good: #1f6b3a;
+  --danger: #a3301a;
+  --warn: #9c4a14;
+  --warn-surface: #9c4a14;
+  --on-warn: #ffffff;
+  --danger-surface: #b3261e;
+  --on-danger: #ffffff;
+  --hint-strong: #020602;
+  --hint-text: #474e4b;
+  --accent-text: #1b5e20;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #37c142;
+    --accent-text: #ddc061;
+    --bg: #0d210e;
+    --card: #153218;
+    --ink: #e9e7e2;
+    --ink-2: #bdbfb8;
+    --muted: #91988d;
+    --line: #244c27;
+    --line-strong: #326736;
+    --good: #6fd08f;
+    --danger: #f08a73;
+    --warn: #f0a868;
+    --accent-dark: #ddc061;
+    --hint-strong: #ddc061;
+    --hint-text: #bdbfb8;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg, #f4f5f2); color: var(--ink, #1c2321); }
+header { background: var(--primary, #2f5d8a); color: var(--on-primary, #fff); border-bottom: 4px solid var(--accent, #d9a441); }
+header .wrap { display: flex; gap: 14px; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+header img { width: 48px; height: 48px; object-fit: contain; }
+header a { color: inherit; text-decoration: none; font-weight: 700; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+main { padding: 24px 0 40px; }
+h1 { font-family: var(--font-head, inherit); font-size: 1.7rem; line-height: 1.2; margin: 0 0 14px; }
+h2 { font-family: var(--font-head, inherit); font-size: 1.25rem; margin: 26px 0 8px; color: var(--primary-text, inherit); }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--primary-text, #2f5d8a); }
+code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
+.hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
+.gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
+.gruppe ul { padding-left: 1.2em; }
+.wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
+footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</a></div></header>
+<main class="wrap">
+<h1>Ans Schwarzes Brett schreiben</h1><p class="wenn">Nur, wenn Schwarzes Brett eingeschaltet ist.</p><p>Hier schreibst du eine dringende Nachricht ans Schwarzes Brett, z. B. „Training fällt heute aus“. Ihr Titel steht als Banner oben auf jeder Seite der App, so lange du willst (anfangs 24 Stunden). Den Text gestaltest du wie in einem Mailprogramm, auf Wunsch mit deiner Signatur und mit Dateien im Anhang. Außerdem änderst oder löschst du hier Nachrichten und siehst, wer was geändert hat.</p>
+<figure class="hilfe-bild"><img src="bilder/schwarzes-brett-schreiben.jpg" alt="Die Seite des Schwarzes Bretts mit dem Formular Neue Nachricht" loading="lazy"><figcaption>Die Seite des Schwarzes Bretts mit dem Formular Neue Nachricht</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong> und dann auf <strong>Schwarzes Brett</strong>. Ist das deine einzige Aufgabe in der Verwaltung, öffnet <strong>Verwaltung</strong> gleich diese Seite. Steht schon eine Nachricht am Brett, führt auch <strong>Brett öffnen und bearbeiten</strong> im Banner hierher.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>‹ Verwaltung</strong>: zurück zur Startseite der Verwaltung (nur, wenn du dort mehrere Aufgaben hast).</li><li><strong>Neue Nachricht</strong>: die Felder <strong>Titel</strong> und <strong>Text</strong>, darüber die Werkzeugleiste zum Gestalten, <strong>Anhänge</strong> mit <strong>Datei anhängen</strong>, das Feld <strong>Sichtbar bis</strong>, die Haken <strong>Benachrichtigung senden</strong> und <strong>E-Mail senden</strong> und der Knopf <strong>Veröffentlichen</strong>.</li><li><strong>Aktuelle Nachrichten</strong>: alle Nachrichten, die gerade stehen, mit <strong>Sichtbar bis</strong>, <strong>Bearbeiten</strong>, <strong>Löschen</strong> und <strong>Verlauf</strong>. Darunter steht, wer die Nachricht zuletzt wann geändert hat und wie weit der Mailversand ist.</li><li><strong>Verlauf: abgelaufene und gelöschte Nachrichten</strong>: Nachrichten der letzten 30 Tage, die abgelaufen sind oder jemand gelöscht hat, mit ihrem Verlauf.</li><li><strong>Laufende Umfragen</strong>: wie bei allen Mitgliedn, wenn die St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V. Umfragen nutzt; darunter <strong>Beendete Umfragen</strong> und, wenn du Umfragen verwalten darfst, <strong>Umfragen verwalten</strong>.</li></ul>
+<h2>Die Werkzeugleiste</h2>
+<p>Mit der Leiste über dem Text gestaltest du die Nachricht wie in einem Mailprogramm. Markiere zuerst den Text, den du ändern willst.</p>
+<figure class="hilfe-bild"><img src="bilder/schwarzes-brett-werkzeuge.jpg" alt="Das Feld Text mit der Werkzeugleiste" loading="lazy"><figcaption>Das Feld Text mit der Werkzeugleiste</figcaption></figure>
+<ul><li><strong>Schriftart</strong> und <strong>Größe</strong>: Auswahl oben links.</li><li><strong>F</strong>, <strong>K</strong>, <strong>U</strong>, <strong>S</strong>: fett, kursiv, unterstrichen, durchgestrichen.</li><li><strong>A</strong> und <strong>ab</strong>: Textfarbe und Hintergrundfarbe (zum Markieren). Ein Tipp öffnet die Farbauswahl.</li><li><strong>⌫</strong>: Formatierung des markierten Texts entfernen.</li><li><strong>⇤ ↔ ⇥ ≡</strong>: linksbündig, zentriert, rechtsbündig, Blocksatz.</li><li><strong>•</strong> und <strong>1.</strong>: Aufzählung und nummerierte Liste.</li><li><strong>⇠</strong> und <strong>⇢</strong>: Einzug verkleinern und vergrößern. In einer Liste rückt das den Punkt ein bzw. aus.</li><li><strong>🔗</strong>: Link. Erlaubt sind Adressen mit https://, E-Mail-Adressen und Telefonnummern.</li><li><strong>🖼</strong>: Bild einfügen (JPG, PNG oder WebP). Bilder kannst du auch hineinziehen oder einfügen. Die Größe änderst du an den Ecken des Bilds.</li><li><strong>―</strong>: Trennlinie.</li><li><strong>▦</strong>: Tabelle einfügen. Steht der Cursor in einer Tabelle, erscheinen Knöpfe für Zeilen und Spalten.</li><li><strong>↶</strong> und <strong>↷</strong>: rückgängig und wiederholen.</li><li><strong>Signatur einfügen</strong>: setzt deine Signatur ans Ende. Hast du noch keine, steht dort <strong>Noch keine Signatur – jetzt einrichten</strong>.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Eine Nachricht veröffentlichen</h3>
+<ol><li>Gib unter <strong>Neue Nachricht</strong> einen <strong>Titel</strong> ein. Er steht im Banner, in der Benachrichtigung und als Betreff der Mail.</li><li>Schreibe darunter den <strong>Text</strong> und gestalte ihn mit der Werkzeugleiste.</li><li>Willst du Dateien mitschicken, tippe unter <strong>Anhänge</strong> auf <strong>Datei anhängen</strong> und wähle eine oder mehrere Dateien. Erlaubt ist jede Art von Datei; mit <strong>×</strong> nimmst du eine wieder heraus.</li><li>Wähle bei <strong>Sichtbar bis</strong>, bis wann die Nachricht stehen soll. Vorgegeben sind 24 Stunden ab jetzt.</li><li>Lass den Haken bei <strong>Benachrichtigung senden</strong>, wenn alle sofort Bescheid bekommen sollen.</li><li>Lass den Haken bei <strong>E-Mail senden</strong>, wenn alle die Nachricht auch per Mail bekommen sollen. Dahinter steht, an wie viele.</li><li>Tippe auf <strong>Veröffentlichen</strong>.</li><li>Prüfe in der Nachfrage Titel, Ende, Versandwege und Anhänge und bestätige. Die Nachricht steht sofort am Brett.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/schwarzes-brett-schreiben-neu.jpg" alt="Eine neue Nachricht im Formular, bereit zum Veröffentlichen" loading="lazy"><figcaption>Eine neue Nachricht im Formular, bereit zum Veröffentlichen</figcaption></figure>
+<h3>Deine Signatur einfügen</h3>
+<ol><li>Tippe beim Schreiben auf <strong>Signatur einfügen</strong>. Sie steht dann am Ende des Texts.</li><li>Du kannst sie danach wie den übrigen Text ändern; deine gespeicherte Signatur bleibt davon unberührt.</li></ol>
+<p>Hast du noch keine Signatur, tippe auf <strong>Noch keine Signatur – jetzt einrichten</strong>. Die App öffnet die Signatur in deinem Konto. Was du schon geschrieben hast, bleibt erhalten: Nach dem Speichern der Signatur führt <strong>‹ Zurück zur Nachricht</strong> wieder hierher. Wie du die Signatur einrichtest, steht auf der Seite <a href="signatur.html" data-seite="signatur">Signatur</a>.</p>
+<h3>Text aus Word oder Outlook übernehmen</h3>
+<ol><li>Markiere den Text in Word oder Outlook und kopiere ihn.</li><li>Füge ihn in das Feld <strong>Text</strong> ein.</li></ol>
+<p>Schrift, Farben, Aufzählungen und Tabellen kommen mit. Bilder übernimmt die App, wo es geht. Klappt das bei einem Bild nicht, sagt sie dir Bescheid; füge es dann einzeln über <strong>🖼</strong> ein.</p>
+<h3>Eine Nachricht ändern</h3>
+<ol><li>Tippe bei der Nachricht auf <strong>Bearbeiten</strong>.</li><li>Ändere <strong>Titel</strong>, <strong>Text</strong>, <strong>Anhänge</strong> oder <strong>Sichtbar bis</strong>. Das Ende kannst du verlängern oder verkürzen; Anhänge kannst du dazunehmen oder mit <strong>×</strong> entfernen.</li><li>Tippe auf <strong>Speichern</strong>. Mit <strong>Abbrechen</strong> bleibt alles, wie es war.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/schwarzes-brett-schreiben-bearbeiten.jpg" alt="Eine Nachricht wird bearbeitet" loading="lazy"><figcaption>Eine Nachricht wird bearbeitet</figcaption></figure>
+<h3>Nachsehen, wer was geändert hat</h3>
+<ol><li>Tippe bei der Nachricht auf <strong>Verlauf</strong>.</li><li>Du siehst jede Änderung mit Zeit und Namen. Bei Titel, Text, Anhängen und Ende stehen der alte und der neue Stand nebeneinander (<strong>vorher</strong>, <strong>nachher</strong>).</li><li>Unter <strong>Mailversand je Empfänger</strong> siehst du, an wen die Mail ging und ob es geklappt hat.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/schwarzes-brett-verlauf.jpg" alt="Der Verlauf einer Nachricht mit vorher und nachher" loading="lazy"><figcaption>Der Verlauf einer Nachricht mit vorher und nachher</figcaption></figure>
+<h3>Eine Nachricht löschen</h3>
+<ol><li>Tippe bei der Nachricht auf <strong>Löschen</strong>.</li><li>Bestätige die Nachfrage. Die Nachricht verschwindet sofort vom Brett. Noch nicht verschickte Mails gehen nicht mehr raus.</li></ol>
+<p>Unter <strong>Verlauf: abgelaufene und gelöschte Nachrichten</strong> steht sie noch 30 Tage, mit Namen und Zeitpunkt des Löschens.</p>
+<h2>Gut zu wissen</h2>
+<ul><li>Mit <strong>Benachrichtigung senden</strong> bekommen alle Mitglied und Personen mit dem internen Kalender (z. B. Anwärter) eine Benachrichtigung mit dem Titel, außer dir selbst. Das gilt für alle, die die Art <strong>Schwarzes Brett: dringende Nachrichten</strong> auf ihrem Gerät eingeschaltet haben.</li><li><strong>E-Mail senden</strong> gibt es, wenn ein Admin den Mailversand eingerichtet hat. Die Mail geht an alle Mitglied und Personen mit dem internen Kalender, für die eine Mailadresse hinterlegt ist und die Mails vom Brett nicht abgeschaltet haben, auch an dich selbst. So siehst du, wie die Mail ankommt. Jede Person bekommt ihre eigene Mail; die Adressen der anderen sieht niemand.</li><li>Anhänge sehen und laden alle herunter, die die Nachricht sehen. Mit <strong>E-Mail senden</strong> hängen sie auch an der Mail. Eine Datei darf höchstens 20 MB groß sein (bei manchen Servern weniger; die App sagt es dann).</li><li>Ist die Mail mit ihren Bildern und Anhängen größer, als der Mailserver annimmt, sagt die App das vor dem Veröffentlichen. Verkleinere dann Bilder oder Anhänge oder nimm den Haken <strong>E-Mail senden</strong> weg.</li><li>Ändern verschickt keine neue Benachrichtigung und keine neue Mail. Ändern sich Titel oder Text, sehen auch die die Nachricht wieder im Banner, die sie ausgeblendet hatten. Ändert sich nur das Ende, bleibt sie ausgeblendet.</li><li>Ändern und löschen darf jede und jeder mit diesem Recht, nicht nur, wer die Nachricht geschrieben hat. Den Verlauf sehen nur Personen mit diesem Recht.</li><li>Eine Längengrenze für Titel und Text gibt es nicht. Sehr lange Titel kürzt das Banner, gespeichert wird alles. Grenzen setzt nur der Server, z. B. bei sehr großen Bildern; die App sagt dir dann, welche.</li><li>Nimm das Schwarzes Brett für Dringendes.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="signatur.html" data-seite="signatur">Signatur</a></li><li><a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a></li></ul>
+</main>
+<footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
+</body>
+</html>

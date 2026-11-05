@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zustand und Updates – Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+/* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
+:root {
+  --font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --primary: #1b5e20;
+  --primary-deep: #103613;
+  --primary-ink: #020602;
+  --on-primary-soft: #d6e2d7;
+  --accent-on-primary: #e2c876;
+  --bar-top: #103613;
+  --bar-bottom: #020602;
+  --on-bar-muted: #9fafa1;
+  --primary-text: #1b5e20;
+  --on-primary: #ffffff;
+  --accent: #d4af37;
+  --accent-light: #e2c876;
+  --accent-dark: #80681b;
+  --on-accent: #111418;
+  --bg: #eff2ed;
+  --card: #ffffff;
+  --ink: #17201d;
+  --ink-2: #474e4b;
+  --muted: #6a6f6b;
+  --line: #dae3d9;
+  --line-strong: #c0d1c0;
+  --good: #1f6b3a;
+  --danger: #a3301a;
+  --warn: #9c4a14;
+  --warn-surface: #9c4a14;
+  --on-warn: #ffffff;
+  --danger-surface: #b3261e;
+  --on-danger: #ffffff;
+  --hint-strong: #020602;
+  --hint-text: #474e4b;
+  --accent-text: #1b5e20;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #37c142;
+    --accent-text: #ddc061;
+    --bg: #0d210e;
+    --card: #153218;
+    --ink: #e9e7e2;
+    --ink-2: #bdbfb8;
+    --muted: #91988d;
+    --line: #244c27;
+    --line-strong: #326736;
+    --good: #6fd08f;
+    --danger: #f08a73;
+    --warn: #f0a868;
+    --accent-dark: #ddc061;
+    --hint-strong: #ddc061;
+    --hint-text: #bdbfb8;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg, #f4f5f2); color: var(--ink, #1c2321); }
+header { background: var(--primary, #2f5d8a); color: var(--on-primary, #fff); border-bottom: 4px solid var(--accent, #d9a441); }
+header .wrap { display: flex; gap: 14px; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+header img { width: 48px; height: 48px; object-fit: contain; }
+header a { color: inherit; text-decoration: none; font-weight: 700; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+main { padding: 24px 0 40px; }
+h1 { font-family: var(--font-head, inherit); font-size: 1.7rem; line-height: 1.2; margin: 0 0 14px; }
+h2 { font-family: var(--font-head, inherit); font-size: 1.25rem; margin: 26px 0 8px; color: var(--primary-text, inherit); }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--primary-text, #2f5d8a); }
+code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
+.hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
+.gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
+.gruppe ul { padding-left: 1.2em; }
+.wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
+footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</a></div></header>
+<main class="wrap">
+<h1>Zustand und Updates</h1><p>Hier siehst du auf einen Blick, ob die App rund läuft, welche Version installiert ist und ob es Updates gibt. Außerdem findest du hier das Fehlerprotokoll und die Statusmeldungen an die Betreuer der App.</p>
+<figure class="hilfe-bild"><img src="bilder/admin-zustand.jpg" alt="Die Seite Zustand und Updates mit der Ampel" loading="lazy"><figcaption>Die Seite Zustand und Updates mit der Ampel</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong>, dann auf <strong>Einstellungen</strong> und auf <strong>Zustand und Updates</strong>.</p>
+<h2>Was du hier siehst</h2>
+<h3>Zustand der App</h3>
+<p>Eine Ampel mit einer Zeile je Thema. Jede Zeile sagt in einem kurzen Text, was los ist und was zu tun ist.</p>
+<ul><li><strong>Updates</strong>: ob die App aktuell ist, ob ein Update ansteht oder fehlgeschlagen ist.</li><li><strong>Galerie</strong>: wann der letzte Abgleich mit Google Drive war, ob er geklappt hat und ob Bilder noch aufbereitet werden oder sich nicht laden ließen.</li><li><strong>Kalender</strong>: ob und wie der Kalender eingerichtet ist und ob die Verbindung mit Google ihn lesen darf.</li><li><strong>Datensicherung</strong>: wann zuletzt eine Sicherung heruntergeladen bzw. in Google Drive abgelegt wurde.</li><li><strong>Server</strong>: welche PHP-Version und Datenbank laufen; gelb, wenn auf dem Webspace weniger als 200 MB frei sind.</li><li><strong>Push-Benachrichtigungen</strong>: wie viele Geräte angemeldet sind, oder was dem Server fehlt, um Benachrichtigungen zu senden.</li><li>Nur ohne WordPress: <strong>Schutz der Daten</strong> (ob Datenbank und Zugangsdaten aus dem Internet abrufbar wären; ist die Zeile rot, lass das sofort beim Hoster beheben), <strong>Verschlüsselte Verbindung</strong> (gelb, wenn die App über <code>http://</code> statt <code>https://</code> läuft; dann gehen Passwörter und Daten unverschlüsselt durchs Netz) und <strong>Hintergrundaufgaben</strong> (ob ein Cronjob beim Hoster die Aufgaben erledigt, mit der Adresse dafür).</li></ul>
+<p>Die Farben: <strong>Grün</strong> heißt alles in Ordnung. <strong>Gelb</strong> heißt, etwas sollte erledigt werden, z. B. eine neue Datensicherung. <strong>Rot</strong> heißt, etwas funktioniert nicht. <strong>Grau</strong> heißt ausgeschaltet, noch nicht eingerichtet oder in dieser Installation nicht verfügbar. Ist bei euch eine Kontaktadresse der Betreuer hinterlegt, steht sie darunter bei <strong>Hilfe</strong>.</p>
+<h3>Updates</h3>
+<ul><li><strong>Installiert: …</strong> mit dem Zeitpunkt der letzten Prüfung und dem Verweis <strong>Was ist neu</strong>.</li><li><strong>✓ Die App ist auf dem neuesten Stand.</strong> oder <strong>Neue Version: …</strong> mit dem Knopf <strong>Jetzt auf … aktualisieren</strong>.</li><li><strong>Das automatische Update auf … wurde zurückgestellt</strong>: nur, wenn vor einem automatischen Update die Sicherung in Google Drive nicht geklappt hat, mit den Knöpfen <strong>Trotzdem aktualisieren</strong> und <strong>Abbrechen</strong>.</li><li><strong>Nach Updates suchen</strong> und <strong>Zustand neu laden</strong>.</li><li><strong>Updates automatisch einspielen (empfohlen)</strong> und <strong>Vorabversionen erhalten (zum Testen)</strong>.</li><li><strong>Auf eine ältere Version zurück</strong>: zum Aufklappen, wenn es frühere Versionen gibt.</li><li><strong>Statusmeldungen an die Betreuer der App senden</strong>: nur, wenn eure App Statusmeldungen vorsieht.</li></ul>
+<h3>Fehlerprotokoll</h3>
+<p>Die Fehler der letzten 14 Tage (höchstens 50) mit Zeitpunkt, Art des Fehlers und vollständigem Fehlertext, mit den Knöpfen <strong>Kopieren</strong> und <strong>Leeren</strong>. Gab es keine, steht dort <strong>Keine Fehler in den letzten 14 Tagen.</strong></p>
+<figure class="hilfe-bild"><img src="bilder/admin-zustand-fehlerprotokoll.jpg" alt="Das Fehlerprotokoll mit zwei Einträgen" loading="lazy"><figcaption>Das Fehlerprotokoll mit zwei Einträgen</figcaption></figure>
+<h2>So gehst du vor</h2>
+<h3>Den aktuellen Stand holen</h3>
+<ol><li>Tippe auf <strong>Zustand neu laden</strong>.</li></ol>
+<h3>Eine neue Version einspielen</h3>
+<ol><li>Tippe auf <strong>Nach Updates suchen</strong>. Die App sucht ohnehin einmal am Tag selbst.</li><li>Gibt es eine neue Version, tippe auf <strong>Jetzt auf … aktualisieren</strong>. Das dauert einige Minuten, mit Sicherung in Google Drive auch länger. Ein Balken zeigt den Schritt (Paket laden, Daten sichern, Sicherung in Google Drive, einspielen), beim Sichern und Hochladen auch die MB; die Größe der Sicherung ist aus der letzten geschätzt („ca.“).</li><li>Danach lädt die App neu.</li></ol>
+<p>Lass die Seite offen, bis die App neu lädt. Bricht die Verbindung zwischendurch ab, läuft das Update auf dem Server weiter und die App wartet darauf. Läuft schon ein Update, wenn du die Seite öffnest (z. B. das automatische), zeigt sie dessen Fortschritt.</p>
+<p>Klappt die Sicherung in Google Drive vor dem Update nicht (z. B. weil der Speicher voll ist), fragt die App nach: Bestätigst du, spielt sie das Update trotzdem ein; die Sicherung auf dem Server ist dann da. Brichst du ab, bleibt die bisherige Version.</p>
+<h3>Ein zurückgestelltes Update entscheiden</h3>
+<p>Vor einem automatischen Update kann niemand nachgefragt werden. Klappt dann die Sicherung in Google Drive nicht, spielt die App das Update nicht ein und zeigt unter <strong>Updates</strong> den Grund.</p>
+<ol><li>Tippe auf <strong>Trotzdem aktualisieren</strong>, um es mit der Sicherung auf dem Server einzuspielen, oder</li><li>auf <strong>Abbrechen</strong>: Dann versucht es die App beim nächsten täglichen Abgleich wieder, mit Sicherung in Google Drive.</li></ol>
+<p>Entscheidest du nichts, versucht es die App ebenfalls am nächsten Tag wieder; klappt es dann, verschwindet der Hinweis.</p>
+<p>Kann die neue Version auf eurem Server nicht laufen (z. B. zu alte PHP- oder WordPress-Version, fehlende Schreibrechte), steht der Grund darüber und der Knopf ist gesperrt. Das muss zuerst behoben werden.</p>
+<h3>Eine neue Hauptversion einspielen</h3>
+<ol><li>Lies die Hinweise zur Version (unter <strong>Was ist neu</strong> bzw. von den Betreuern der App).</li><li>Tippe auf <strong>Hauptversion einspielen</strong> und bestätige die Rückfrage.</li></ol>
+<p>Eine neue Hauptversion spielt die App nie automatisch ein. Vorher sichert sie die Daten. Zurück auf die bisherige Hauptversion geht es danach nicht per Knopf, nur mit Hilfe der Betreuer.</p>
+<h3>Auf eine ältere Version zurückgehen</h3>
+<ol><li>Tippe auf <strong>Auf eine ältere Version zurück</strong>.</li><li>Wähle bei <strong>Version</strong> eine frühere Version derselben Hauptversion.</li><li>Tippe auf <strong>Zurückrollen</strong> und bestätige die Rückfrage.</li></ol>
+<p>Die Version, von der du kommst, spielt die App danach nicht mehr automatisch ein, erst wieder die nächste neuere.</p>
+<h3>Das Fehlerprotokoll an die Betreuer schicken</h3>
+<ol><li>Sieh das Protokoll kurz durch: Fehlertexte können Namen oder Inhalte enthalten.</li><li>Tippe auf <strong>Kopieren</strong> und füge den Text in eine Nachricht an die Betreuer ein. Klappt das Kopieren nicht, zeigt die App den Text zum Markieren.</li><li>Ist das Problem behoben, kannst du mit <strong>Leeren</strong> das Protokoll löschen.</li></ol>
+<h2>Gut zu wissen</h2>
+<ul><li><strong>Automatische Updates:</strong> Solange <strong>Updates automatisch einspielen (empfohlen)</strong> an ist, spielt die App neue Versionen derselben Hauptversion selbst ein. Sie sucht dafür einmal am Tag und spielt eine passende Version dabei gleich ein; eine feste Uhrzeit gibt es nicht. Ohne Cronjob beim Hoster passiert das nur, wenn jemand die App (mit WordPress: die Webseite) aufruft; wird sie selten aufgerufen, kommen Updates entsprechend später (siehe <strong>Für Fortgeschrittene</strong> unten). Mit WordPress kann die Webseite automatische Updates sperren; dann steht das hier, und du spielst neue Versionen von Hand ein.</li><li><strong>Vorsorge:</strong> Vor jedem Update (auch beim Zurückrollen) sichert die App die Daten automatisch auf dem Server; die letzten fünf dieser Sicherungen bleiben. Sind die <a href="admin-updates-und-sicherung.html" data-seite="admin-updates-und-sicherung">Sicherungen in Google Drive</a> eingeschaltet, kommt dieselbe Sicherung auch dorthin; auch dort bleiben die letzten fünf. Klappt die Sicherung auf dem Server nicht, wird nicht aktualisiert. Klappt nur Google Drive nicht, fragt die App nach (siehe oben). Schlägt ein Update fehl, läuft die bisherige Version weiter und der Grund steht hier.</li><li><strong>Zurückgezogene Version:</strong> Wird eine fehlerhafte Version zurückgezogen, wechselt die App von selbst auf eine geprüfte Version (außer automatische Updates sind gesperrt); mit <strong>Jetzt auf … wechseln</strong> geht das sofort. Gibt es noch keine geprüfte Version, meldest du dich bei den Betreuern der App.</li><li><strong>Vorabversionen:</strong> Mit <strong>Vorabversionen erhalten (zum Testen)</strong> bekommt diese Installation jede neue Version, sobald sie gebaut ist, noch bevor sie für alle freigegeben wird. Das ist für eine Testseite gedacht. Schaltest du es aus, bleibt die jetzige Version installiert, bis eine neuere für alle freigegeben ist.</li><li><strong>Statusmeldungen:</strong> Wenn du zustimmst, schickt die App den Betreuern stündlich ein kurzes Lebenszeichen (u. a. Version, Farbe der Ampel je Zeile, Fehlercodes mit Ursache, z. B. „Kalender: HTTP 404“, und Nutzungszahlen ohne Namen: wie viele Konten es gibt, wie viele davon in den letzten 24 Stunden, 7 und 30 Tagen aktiv waren und wie viele Personen welchen Bereich genutzt haben) und meldet schwere Fehler sofort. Namen, Inhalte und Fehlertexte werden nie gesendet. Was genau gesendet wird, zeigt <strong>Was genau gesendet wird (Beispiel: Lebenszeichen)</strong>; darüber steht, wann die letzte Meldung ging. Nimmst du die Zustimmung zurück, werden auch die gezählten Fehler gelöscht.</li><li><strong>Fehlerprotokoll:</strong> Es bleibt auf eurem Server und wird nicht gesendet, auch ohne Zustimmung zu den Statusmeldungen. Gleiche Fehler direkt hintereinander stehen nur einmal da, mit Anzahl und Zeitraum. Adressen sind auf den Server gekürzt; so bleibt z. B. eine geheime Kalender-Adresse geheim.</li><li>Bekommt eure Installation keine Updates über die App, steht im Abschnitt <strong>Updates</strong> nur die installierte Version.</li></ul>
+<p class="hinweis"><strong>Für Fortgeschrittene:</strong> Ein <em>Cronjob</em> ist ein Auftrag im Kundenmenü eures Hosters, der eine Adresse regelmäßig aufruft. Ohne ihn erledigt die App ihre Hintergrundaufgaben (Abgleich von Galerie und Kalender, Updates) nach Seitenaufrufen. Zuverlässiger ist ein Cronjob, der alle 15 Minuten die Adresse aufruft, die bei <strong>Hintergrundaufgaben</strong> steht. Mit WordPress gibt es diese Zeile nicht; dort ersetzt der Cronjob WP-Cron, wie in der Anleitung zur Installation mit WordPress beschrieben.</p>
+<p>Was du bei typischen Meldungen tun kannst, steht unter <a href="haeufige-probleme.html" data-seite="haeufige-probleme">Häufige Probleme</a>.</p>
+<h2>Siehe auch</h2>
+<ul><li><a href="admin-neuerungen.html" data-seite="admin-neuerungen">Was ist neu</a></li><li><a href="admin-updates-und-sicherung.html" data-seite="admin-updates-und-sicherung">Datensicherung</a></li></ul>
+</main>
+<footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
+</body>
+</html>

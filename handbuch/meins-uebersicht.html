@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meins: Übersicht – Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+/* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
+:root {
+  --font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --primary: #1b5e20;
+  --primary-deep: #103613;
+  --primary-ink: #020602;
+  --on-primary-soft: #d6e2d7;
+  --accent-on-primary: #e2c876;
+  --bar-top: #103613;
+  --bar-bottom: #020602;
+  --on-bar-muted: #9fafa1;
+  --primary-text: #1b5e20;
+  --on-primary: #ffffff;
+  --accent: #d4af37;
+  --accent-light: #e2c876;
+  --accent-dark: #80681b;
+  --on-accent: #111418;
+  --bg: #eff2ed;
+  --card: #ffffff;
+  --ink: #17201d;
+  --ink-2: #474e4b;
+  --muted: #6a6f6b;
+  --line: #dae3d9;
+  --line-strong: #c0d1c0;
+  --good: #1f6b3a;
+  --danger: #a3301a;
+  --warn: #9c4a14;
+  --warn-surface: #9c4a14;
+  --on-warn: #ffffff;
+  --danger-surface: #b3261e;
+  --on-danger: #ffffff;
+  --hint-strong: #020602;
+  --hint-text: #474e4b;
+  --accent-text: #1b5e20;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #37c142;
+    --accent-text: #ddc061;
+    --bg: #0d210e;
+    --card: #153218;
+    --ink: #e9e7e2;
+    --ink-2: #bdbfb8;
+    --muted: #91988d;
+    --line: #244c27;
+    --line-strong: #326736;
+    --good: #6fd08f;
+    --danger: #f08a73;
+    --warn: #f0a868;
+    --accent-dark: #ddc061;
+    --hint-strong: #ddc061;
+    --hint-text: #bdbfb8;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg, #f4f5f2); color: var(--ink, #1c2321); }
+header { background: var(--primary, #2f5d8a); color: var(--on-primary, #fff); border-bottom: 4px solid var(--accent, #d9a441); }
+header .wrap { display: flex; gap: 14px; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+header img { width: 48px; height: 48px; object-fit: contain; }
+header a { color: inherit; text-decoration: none; font-weight: 700; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+main { padding: 24px 0 40px; }
+h1 { font-family: var(--font-head, inherit); font-size: 1.7rem; line-height: 1.2; margin: 0 0 14px; }
+h2 { font-family: var(--font-head, inherit); font-size: 1.25rem; margin: 26px 0 8px; color: var(--primary-text, inherit); }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--primary-text, #2f5d8a); }
+code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
+.hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
+.gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
+.gruppe ul { padding-left: 1.2em; }
+.wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
+footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</a></div></header>
+<main class="wrap">
+<h1>Meins: Übersicht</h1><p>Die Übersicht zeigt deine eigenen Angaben auf einen Blick: Dienstgrad, Punkte, offene Beträge, Titel, Geburtstag, Eintritt und Ämter. Hier schaust du nur nach; ein Tipp führt dich zu den Einzelheiten.</p>
+<figure class="hilfe-bild"><img src="bilder/meins-uebersicht.jpg" alt="Die Übersicht unter Meins mit Abzeichen, Kacheln und Titeln" loading="lazy"><figcaption>Die Übersicht unter Meins mit Abzeichen, Kacheln und Titeln</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Meins</strong>. Die Übersicht ist die erste Seite. Steht oben im Menü etwas anderes, tippe auf das Menü und wähle <strong>Übersicht</strong>.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Menü oben</strong> (drei Striche): wechselt zwischen <strong>Übersicht</strong>, deinen Punkte, deinen Strafen, deinem Dienstgrad, deiner Anwesenheit und <strong>Konto</strong>. Es stehen nur die Bereiche darin, die es bei euch gibt.</li><li><strong>Dein Name</strong>, darunter das Abzeichen mit deinem Dienstgrad (wenn es bei euch Dienstgrade gibt) und dein Foto, falls eines hinterlegt ist.</li><li><strong>Rolle</strong> bzw. <strong>Rollen</strong>: welche Rolle(n) du in der App hast.</li><li><strong>Kachel Punkte</strong>: deine Summe der Punkte.</li><li><strong>Kachel Offen</strong>: wie viel bei den Strafen noch offen ist.</li><li><strong>Kachel Titel</strong>: deine Ehrentitel und Ämter, sonst „Keine“.</li><li><strong>Geburtstag</strong> und <strong>Eintritt</strong>: was du eingetragen hast, sonst „Nicht eingetragen“.</li><li><strong>Ämter</strong>: deine Ämter als Zeitstrahl, sonst „Du hast keine Ämter eingetragen.“</li></ul>
+<p>Kacheln und Zeilen erscheinen nur, wenn es den Bereich bei euch gibt.</p>
+<figure class="hilfe-bild"><img src="bilder/meins-uebersicht-menue.jpg" alt="Das aufgeklappte Menü unter Meins" loading="lazy"><figcaption>Das aufgeklappte Menü unter Meins</figcaption></figure>
+<h2>So gehst du vor</h2>
+<h3>Einzelheiten ansehen</h3>
+<ol><li>Tippe auf die Kachel <strong>Punkte</strong> oder <strong>Offen</strong>, um alle Einträge zu sehen.</li><li>Tippe auf das Abzeichen, um deinen Dienstgrad mit Verlauf zu sehen.</li><li>Tippe auf dein Foto, um es zu vergrößern.</li></ol>
+<h3>Geburtstag oder Eintritt ändern</h3>
+<ol><li>Tippe auf die Zeile <strong>Geburtstag</strong> (bzw. <strong>Eintritt</strong>). Die Seite <strong>Konto</strong> öffnet sich.</li><li>Ändere die Angabe dort und speichere.</li></ol>
+<p>Den Eintritt kannst du nur ändern, wenn es bei euch die Mitglieder gibt; sonst führt die Zeile nirgends hin.</p>
+<h2>Gut zu wissen</h2>
+<ul><li>Diese Seite sehen nur Mitglieder. Ohne Mitgliedschaft zeigt <strong>Meins</strong> nur dein Konto.</li><li>Foto, Name, Rolle und Titel pflegen die Verantwortlichen in der Verwaltung, nicht du.</li><li>Du kannst mehrere Titel haben. Sie hängen nicht von deinem Dienstgrad oder deinen Punkte ab. Gehört ein Titel zu einem Amt, hast du ihn, solange das Amt läuft.</li><li>Bekommst du einen neuen Titel, kann dir die App eine Nachricht schicken. Das schaltest du unter <strong>Konto</strong> → <strong>Benachrichtigungen einstellen</strong> mit <strong>Titel: neu verliehen</strong> ein.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="anmelden-und-konto.html" data-seite="anmelden-und-konto">Mein Konto</a></li><li><a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a></li></ul>
+</main>
+<footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
+</body>
+</html>

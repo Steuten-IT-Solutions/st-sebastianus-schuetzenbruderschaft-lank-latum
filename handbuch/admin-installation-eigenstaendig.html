@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Installation ohne WordPress – Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+/* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
+:root {
+  --font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --primary: #1b5e20;
+  --primary-deep: #103613;
+  --primary-ink: #020602;
+  --on-primary-soft: #d6e2d7;
+  --accent-on-primary: #e2c876;
+  --bar-top: #103613;
+  --bar-bottom: #020602;
+  --on-bar-muted: #9fafa1;
+  --primary-text: #1b5e20;
+  --on-primary: #ffffff;
+  --accent: #d4af37;
+  --accent-light: #e2c876;
+  --accent-dark: #80681b;
+  --on-accent: #111418;
+  --bg: #eff2ed;
+  --card: #ffffff;
+  --ink: #17201d;
+  --ink-2: #474e4b;
+  --muted: #6a6f6b;
+  --line: #dae3d9;
+  --line-strong: #c0d1c0;
+  --good: #1f6b3a;
+  --danger: #a3301a;
+  --warn: #9c4a14;
+  --warn-surface: #9c4a14;
+  --on-warn: #ffffff;
+  --danger-surface: #b3261e;
+  --on-danger: #ffffff;
+  --hint-strong: #020602;
+  --hint-text: #474e4b;
+  --accent-text: #1b5e20;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #37c142;
+    --accent-text: #ddc061;
+    --bg: #0d210e;
+    --card: #153218;
+    --ink: #e9e7e2;
+    --ink-2: #bdbfb8;
+    --muted: #91988d;
+    --line: #244c27;
+    --line-strong: #326736;
+    --good: #6fd08f;
+    --danger: #f08a73;
+    --warn: #f0a868;
+    --accent-dark: #ddc061;
+    --hint-strong: #ddc061;
+    --hint-text: #bdbfb8;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg, #f4f5f2); color: var(--ink, #1c2321); }
+header { background: var(--primary, #2f5d8a); color: var(--on-primary, #fff); border-bottom: 4px solid var(--accent, #d9a441); }
+header .wrap { display: flex; gap: 14px; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+header img { width: 48px; height: 48px; object-fit: contain; }
+header a { color: inherit; text-decoration: none; font-weight: 700; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+main { padding: 24px 0 40px; }
+h1 { font-family: var(--font-head, inherit); font-size: 1.7rem; line-height: 1.2; margin: 0 0 14px; }
+h2 { font-family: var(--font-head, inherit); font-size: 1.25rem; margin: 26px 0 8px; color: var(--primary-text, inherit); }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--primary-text, #2f5d8a); }
+code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
+.hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
+.gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
+.gruppe ul { padding-left: 1.2em; }
+.wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
+footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</a></div></header>
+<main class="wrap">
+<h1>Installation ohne WordPress</h1><p class="wenn">Nur ohne WordPress.</p><p>So bringst du die App auf euren eigenen Webspace, wenn eure Webseite nicht mit WordPress läuft. Die App bekommt dann eine eigene Adresse, z. B. <code>eure-webseite.de/app/</code>, und eigene Konten.</p>
+<h2>Was du brauchst</h2>
+<ul><li><strong>Webspace mit PHP ab Version 8.1.</strong> Webspace ist der Speicherplatz bei eurem Hoster (der Firma, bei der eure Webseite liegt). PHP ist die Programmiersprache, in der die App auf dem Server läuft; fast jeder Webspace hat sie. Die Version lässt sich meist im Kundenmenü des Hosters umstellen.</li><li><strong>Zugang zum Dateimanager des Hosters</strong> (oder per FTP, einem Programm zum Hochladen von Dateien).</li><li>Eine Datenbank musst du nicht anlegen. Die App speichert ihre Daten dann in einer eigenen Datei auf dem Webspace.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Die App installieren</h3>
+<ol><li>Lade auf der Download-Seite der Kompanie die Datei <code>install.php</code> herunter.</li><li>Lege im Dateimanager des Hosters einen Ordner <code>app</code> an und lade die Datei hinein.</li><li>Öffne <code>eure-webseite.de/app/install.php</code> im Browser. Unter <strong>1. Server prüfen</strong> sagt der Installer, ob alles da ist, und falls nicht, was fehlt.</li><li>Prüfe unter <strong>2. Einrichten</strong> die <strong>Adresse der App</strong>.</li><li>Trage unter <strong>Erster Admin</strong> <strong>Name</strong>, <strong>Benutzername</strong>, <strong>E-Mail (optional)</strong> und ein <strong>Passwort (mindestens 10 Zeichen)</strong> ein und wiederhole das Passwort.</li><li>Lass bei der Datenbank <strong>Automatisch (SQLite-Datei, empfohlen)</strong> stehen. Nur wenn ihr eine MySQL- oder MariaDB-Datenbank nutzen wollt, die ihr im Kundenmenü des Hosters angelegt habt, wählst du sie und trägst ihre Zugangsdaten ein.</li><li>Klicke auf <strong>App installieren</strong>. Der Installer lädt die App, richtet sie ein und löscht sich danach selbst. Klappt das Löschen nicht, sagt er es; dann löschst du <code>install.php</code> im Dateimanager.</li><li>Melde dich mit dem eben angelegten Konto an. Die App führt dich durch den <a href="admin-einrichtung.html" data-seite="admin-einrichtung">Einrichtungsassistenten</a>.</li></ol>
+<h3>Hintergrundaufgaben zuverlässig machen (empfohlen)</h3>
+<p>Die App erledigt Aufgaben im Hintergrund, z. B. den Abgleich von Galerie und Kalender und die Updates. Das klappt auch ohne dein Zutun: Nach einem Besuch der App erledigt sie fällige Aufgaben, ohne den Besucher warten zu lassen. Wird die App selten aufgerufen, bleiben die Aufgaben aber liegen.</p>
+<p>Zuverlässiger geht es mit einem <strong>Cronjob</strong>: einem Auftrag im Kundenmenü des Hosters, der eine Adresse regelmäßig aufruft.</p>
+<ol><li>Kopiere die Cron-Adresse. Der Installer zeigt sie am Ende; sie steht auch unter <strong>Einstellungen → Zustand und Updates</strong> bei <strong>Hintergrundaufgaben</strong>.</li><li>Lege im Kundenmenü des Hosters einen Cronjob an, der diese Adresse alle 15 Minuten aufruft.</li><li>Prüfe nach einer Weile unter <strong>Hintergrundaufgaben</strong>, ob dort steht, dass ein Cronjob die Aufgaben erledigt (siehe <a href="admin-zustand.html" data-seite="admin-zustand">Zustand und Updates</a>).</li></ol>
+<p class="hinweis"><strong>Für Fortgeschrittene:</strong> Der Schlüssel in der Cron-Adresse (<code>key=…</code>) landet im Zugriffsprotokoll des Webservers. Kann der Cronjob einen Header senden, ist das besser: <code>curl -s -H &quot;X-Kompanie-Cron-Key: &lt;Schlüssel&gt;&quot; &quot;&lt;Cron-Adresse ohne &amp;key=…&gt;&quot;</code>. Der Schlüssel stößt nur fällige Hintergrundaufgaben an.</p>
+<h3>Die App reparieren oder neu einspielen</h3>
+<p>Lade <code>install.php</code> erneut in den Ordner <code>app</code> und öffne es im Browser. Nach der Anmeldung eines Admin bietet der Installer <strong>Aktualisieren / Reparieren</strong> an: Die aktuelle Version wird neu eingespielt, die Daten bleiben erhalten.</p>
+<h2>Gut zu wissen</h2>
+<ul><li>Läuft auf dem Webspace schon WordPress, richtet der Installer nichts ein und empfiehlt stattdessen das Plugin.</li><li>Updates spielt die App danach selbst ein (siehe <a href="admin-zustand.html" data-seite="admin-zustand">Zustand und Updates</a>).</li><li>Die Daten der App müssen vor Zugriffen aus dem Internet geschützt sein. Die App prüft das selbst und zeigt das Ergebnis unter <strong>Zustand und Updates</strong> bei <strong>Schutz der Daten</strong>.</li><li>Die App sollte nur über <code>https://</code> laufen, sonst gehen Passwörter und Daten der Mitglieder unverschlüsselt durchs Netz. Ein Zertifikat richtet der Hoster ein, oft kostenlos. Liegt die App im Hauptverzeichnis der Adresse (z. B. <code>https://app.example.org/</code>), sagt sie dem Browser über HTTPS, die Adresse künftig nur noch verschlüsselt zu öffnen (HSTS); wer das nicht will, trägt in <code>config.php</code> <code>&apos;hsts&apos; =&gt; false</code> ein. In einem Unterordner (z. B. <code>https://example.org/app/</code>) gälte das auch für die übrigen Seiten unter derselben Adresse; dort schickt die App es nur mit <code>&apos;hsts&apos; =&gt; true</code>.</li></ul>
+<p class="hinweis"><strong>Für Fortgeschrittene: Server mit nginx.</strong> Die meisten Hoster nutzen den Webserver Apache oder LiteSpeed; dann richtet die App alles selbst ein (über die Dateien <code>.htaccess</code>). Läuft euer Webspace mit <strong>nginx</strong>, wertet der Server diese Dateien nicht aus. Die App läuft trotzdem, aber bittet den Hoster, die Ordner <code>data</code>, <code>src</code>, <code>core</code> und <code>bin</code> im App-Ordner für Zugriffe von außen zu sperren (der Installer prüft das und legt die Daten sonst außerhalb des Web-Verzeichnisses ab). Damit die App schneller lädt, sollten außerdem Dateien unter <code>app/assets/</code> ein Jahr im Browser zwischengespeichert werden (<code>Cache-Control: public, max-age=31536000, immutable</code>; ihr Name ändert sich mit jeder Version), Symbole und Manifest unter <code>app/</code> einen Tag, und Textdateien (HTML, CSS, JavaScript, JSON, SVG, Manifest) komprimiert (gzip) ausgeliefert werden.</p>
+<h2>Siehe auch</h2>
+<ul><li><a href="admin-einrichtung.html" data-seite="admin-einrichtung">Einrichtungsassistent</a></li><li><a href="admin-zustand.html" data-seite="admin-zustand">Zustand und Updates</a></li></ul>
+</main>
+<footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
+</body>
+</html>

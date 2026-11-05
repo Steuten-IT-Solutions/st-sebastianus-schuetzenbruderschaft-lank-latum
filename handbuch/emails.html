@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-Mails – Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+/* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
+:root {
+  --font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --primary: #1b5e20;
+  --primary-deep: #103613;
+  --primary-ink: #020602;
+  --on-primary-soft: #d6e2d7;
+  --accent-on-primary: #e2c876;
+  --bar-top: #103613;
+  --bar-bottom: #020602;
+  --on-bar-muted: #9fafa1;
+  --primary-text: #1b5e20;
+  --on-primary: #ffffff;
+  --accent: #d4af37;
+  --accent-light: #e2c876;
+  --accent-dark: #80681b;
+  --on-accent: #111418;
+  --bg: #eff2ed;
+  --card: #ffffff;
+  --ink: #17201d;
+  --ink-2: #474e4b;
+  --muted: #6a6f6b;
+  --line: #dae3d9;
+  --line-strong: #c0d1c0;
+  --good: #1f6b3a;
+  --danger: #a3301a;
+  --warn: #9c4a14;
+  --warn-surface: #9c4a14;
+  --on-warn: #ffffff;
+  --danger-surface: #b3261e;
+  --on-danger: #ffffff;
+  --hint-strong: #020602;
+  --hint-text: #474e4b;
+  --accent-text: #1b5e20;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #37c142;
+    --accent-text: #ddc061;
+    --bg: #0d210e;
+    --card: #153218;
+    --ink: #e9e7e2;
+    --ink-2: #bdbfb8;
+    --muted: #91988d;
+    --line: #244c27;
+    --line-strong: #326736;
+    --good: #6fd08f;
+    --danger: #f08a73;
+    --warn: #f0a868;
+    --accent-dark: #ddc061;
+    --hint-strong: #ddc061;
+    --hint-text: #bdbfb8;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg, #f4f5f2); color: var(--ink, #1c2321); }
+header { background: var(--primary, #2f5d8a); color: var(--on-primary, #fff); border-bottom: 4px solid var(--accent, #d9a441); }
+header .wrap { display: flex; gap: 14px; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+header img { width: 48px; height: 48px; object-fit: contain; }
+header a { color: inherit; text-decoration: none; font-weight: 700; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+main { padding: 24px 0 40px; }
+h1 { font-family: var(--font-head, inherit); font-size: 1.7rem; line-height: 1.2; margin: 0 0 14px; }
+h2 { font-family: var(--font-head, inherit); font-size: 1.25rem; margin: 26px 0 8px; color: var(--primary-text, inherit); }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--primary-text, #2f5d8a); }
+code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
+.hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
+.gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
+.gruppe ul { padding-left: 1.2em; }
+.wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
+footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</a></div></header>
+<main class="wrap">
+<h1>E-Mails</h1><p class="wenn">Nur, wenn E-Mails eingeschaltet ist.</p><p>Hier schreibst du E-Mails aus der App, z. B. eine Einladung zur Versammlung an alle Mitglied oder eine Nachricht an den Vorstand und eine Adresse außerhalb der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.. Empfänger wählst du wie in einem Mailprogramm in <strong>An</strong>, <strong>Cc</strong> und <strong>Bcc</strong>: Mailgruppen wie <strong>Alle Mitglieder</strong>, ganze Rollen, einzelne Mitglieder oder beliebige Mailadressen. Den Text gestaltest du genauso wie am Schwarzes Brett, auf Wunsch mit deiner Signatur und mit Dateien im Anhang. Darunter siehst du, welche E-Mails verschickt wurden und ob sie angekommen sind.</p>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong> und dann auf den Knopf <strong>E-Mails</strong>. Den Knopf gibt es erst, wenn ein Admin den Mailversand eingerichtet hat.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>‹ Verwaltung</strong>: zurück zur Startseite der Verwaltung (nur, wenn du dort mehrere Aufgaben hast).</li><li><strong>E-Mail schreiben</strong>: oben der Absender (<strong>Von</strong>), darunter die Felder <strong>An</strong>, <strong>Cc</strong> und <strong>Bcc</strong> (Cc und Bcc nach einem Tipp auf <strong>Cc und Bcc hinzufügen</strong>), <strong>Betreff</strong>, <strong>Text</strong> mit der Werkzeugleiste, <strong>Anhänge</strong> mit <strong>Datei anhängen</strong> und der Knopf <strong>Senden</strong>.</li><li><strong>Mailgruppen verwalten</strong>: öffnet die Mailgruppen (siehe unten).</li><li><strong>Versendete E-Mails</strong>: alle E-Mails des letzten Jahres mit Betreff, wer sie wann geschrieben hat und wie weit der Versand ist. Ein Tipp öffnet die E-Mail.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Eine E-Mail schreiben und senden</h3>
+<ol><li>Tippe in das Feld <strong>An</strong> und gib einen Teil eines Namens ein. Die App schlägt passende Mailgruppen, Rollen und Mitglieder vor (für alle z. B. „Alle“ eingeben); tippe auf einen Vorschlag (oder wähle ihn mit den Pfeiltasten und Enter).</li><li>Eine Adresse außerhalb der App gibst du ganz ein und bestätigst sie mit Enter oder einem Komma. Mehrere Adressen auf einmal kannst du auch einfügen.</li><li>Für Kopien tippe auf <strong>Cc und Bcc hinzufügen</strong> und wähle dort genauso aus.</li><li>Gib einen <strong>Betreff</strong> ein.</li><li>Schreibe den <strong>Text</strong> und gestalte ihn mit der Werkzeugleiste darüber: Schrift, Farben, Listen, Links, Bilder und Tabellen, wie in einem Mailprogramm. Text aus Word oder Outlook kannst du einfügen. Mit <strong>Signatur einfügen</strong> setzt du deine Signatur ans Ende.</li><li>Willst du Dateien mitschicken, tippe unter <strong>Anhänge</strong> auf <strong>Datei anhängen</strong> und wähle eine oder mehrere Dateien. Erlaubt ist jede Art von Datei, je Datei höchstens 20 MB (bei manchen Servern weniger); mit <strong>×</strong> nimmst du eine wieder heraus.</li><li>Tippe auf <strong>Senden</strong>.</li><li>Prüfe in der Nachfrage, wie viele Empfänger die E-Mail in An, Cc und Bcc bekommen und welche Anhänge dabei sind, und bestätige. Die App verschickt sie gleich im Hintergrund.</li></ol>
+<p>Einen Empfänger nimmst du mit dem <strong>×</strong> an seinem Kärtchen wieder heraus. Was du schreibst, merkt sich die App auf diesem Gerät, bis du sendest.</p>
+<h3>Mailgruppen einrichten</h3>
+<p>Mailgruppen wählst du beim Schreiben wie eine Rolle aus. Zwei Gruppen gibt es immer:</p>
+<ul><li><strong>Alle Mitglieder</strong>: alle, deren Rolle das Recht <strong>Gehört zur Kompanie</strong> hat, also auch Admins und eigene Rollen wie ein Spieß, aber keine Anwärter.</li><li><strong>Alle Konten</strong>: alle mit einem Konto außer Gästen, auch Anwärter.</li></ul>
+<p>Wer dazugehört, ermittelt die App beim Senden; du musst diese beiden Gruppen nie pflegen und kannst sie nur umbenennen. Eigene Gruppen, z. B. für den Vorstand, legst du so an:</p>
+<ol><li>Tippe unter dem Formular auf <strong>Mailgruppen verwalten</strong>.</li><li>Tippe auf <strong>Neue Mailgruppe</strong> und gib eine <strong>Bezeichnung</strong> ein.</li><li>Wähle unter <strong>Mitglieder der Gruppe</strong> Rollen, einzelne Mitglieder und beliebige Mailadressen aus, genauso wie beim Schreiben.</li><li>Tippe auf <strong>Speichern</strong>.</li></ol>
+<p>Mit <strong>Bearbeiten</strong> änderst du eine Gruppe, mit <strong>Löschen</strong> entfernst du sie. Versendete E-Mails zeigen eine gelöschte Gruppe als „Gelöschte Gruppe“.</p>
+<h3>Nachsehen, ob die E-Mail angekommen ist</h3>
+<ol><li>Tippe unter <strong>Versendete E-Mails</strong> auf die E-Mail.</li><li>Du siehst die gewählten Empfänger, den Text, die Anhänge (zum Herunterladen) und den Stand des Versands.</li><li>Unter <strong>Versand je Empfänger</strong> steht für jede Adresse, ob die E-Mail gesendet wurde, noch aussteht oder fehlgeschlagen ist, mit dem Grund.</li></ol>
+<h3>Deine Signatur einrichten</h3>
+<p>Hast du noch keine Signatur, tippe beim Schreiben auf <strong>Noch keine Signatur – jetzt einrichten</strong>. Die App öffnet die Signatur in deinem Konto (<strong>Meins → Konto</strong>). Was du schon geschrieben hast, bleibt erhalten: Nach dem Speichern der Signatur führt <strong>‹ Zurück zur E-Mail</strong> wieder hierher.</p>
+<h2>Gut zu wissen</h2>
+<ul><li>Absender ist die Adresse der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V., die ein Admin unter <strong>Einstellungen → E-Mail</strong> eingetragen hat. Antworten gehen an diese Adresse.</li><li>Wer in <strong>An</strong> und <strong>Cc</strong> steht, sieht alle anderen Empfänger aus An und Cc, wie in einem Mailprogramm. Wer in <strong>Bcc</strong> steht, ist für niemanden sichtbar. Schreibst du an eine große Gruppe, nimm deshalb lieber <strong>Bcc</strong>.</li><li>Eine Rolle umfasst alle, die sie als Rolle oder Zusatzrolle haben. Die Rolle Mitglied erreicht deshalb keine Admins oder Spieße, die eine eigene Rolle haben; für eine Mail an alle nimm die Gruppe <strong>Alle Mitglieder</strong>.</li><li>Ausgeschiedene Mitglieder (Ehemalige) bekommen nie eine E-Mail, auch wenn sie noch in einer Mailgruppe eingetragen waren. Jede Adresse bekommt die E-Mail nur einmal, auch wenn sie in mehreren Rollen oder Feldern steht; dann gilt An vor Cc vor Bcc.</li><li>Mitglieder ohne hinterlegte Mailadresse bekommen nichts. Ihre Kärtchen sind markiert, und die Nachfrage vor dem Senden nennt sie.</li><li>Du bekommst die E-Mail selbst nur, wenn du dich (oder eine deiner Rollen oder eine Gruppe, zu der du gehörst) auswählst.</li><li>Die App verschickt die E-Mails einzeln und nach und nach, so wie es unter <strong>Einstellungen → E-Mail</strong> eingestellt ist. Klappt es bei einer Adresse vorübergehend nicht, versucht sie es später noch einmal.</li><li>Ist die E-Mail mit ihren Bildern und Anhängen größer, als der Mailserver annimmt, sagt die App das vor dem Senden. Verkleinere dann Bilder oder Anhänge. Viele Mailserver nehmen nur 10 bis 25 MB je Mail an.</li><li>Versendete E-Mails bleiben ein Jahr im Verlauf; danach löscht die App sie samt Protokoll und Anhängen. Den Verlauf sehen alle, die E-Mails versenden dürfen.</li></ul>
+</main>
+<footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
+</body>
+</html>

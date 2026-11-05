@@ -1,0 +1,41 @@
+{
+  "name": "St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.",
+  "shortName": "St. Sebastianus Bruderschaft",
+  "description": "Die App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.",
+  "greeting": "Hallo, {name}",
+  "guestWelcome": "",
+  "labels": {
+    "roles": {
+      "guest": "Gast",
+      "candidate": "Anwärter",
+      "member": "Mitglied",
+      "organizer": "Verwalter",
+      "manager": "Leitung",
+      "admin": "Admin"
+    },
+    "sections": {
+      "events": "Termine",
+      "news": "News",
+      "gallery": "Galerie",
+      "points": "Punkte",
+      "penalties": "Strafen",
+      "ranks": "Dienstgrade",
+      "titles": "Titel",
+      "attendance": "Anwesenheit",
+      "documents": "Dokumente",
+      "board": "Schwarzes Brett",
+      "polls": "Umfragen",
+      "birthdays": "Geburtstage",
+      "inventory": "Inventar",
+      "directory": "Mitglieder",
+      "offices": "Ämter",
+      "lists": "Listen",
+      "mail": "E-Mails"
+    },
+    "rank": "Dienstgrad"
+  },
+  "font": "System",
+  "themeColor": "#1b5e20",
+  "backgroundColor": "#eff2ed",
+  "legal": {}
+}

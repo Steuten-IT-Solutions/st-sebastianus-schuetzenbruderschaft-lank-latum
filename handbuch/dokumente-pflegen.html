@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dokumente verwalten – Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+/* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
+:root {
+  --font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --primary: #1b5e20;
+  --primary-deep: #103613;
+  --primary-ink: #020602;
+  --on-primary-soft: #d6e2d7;
+  --accent-on-primary: #e2c876;
+  --bar-top: #103613;
+  --bar-bottom: #020602;
+  --on-bar-muted: #9fafa1;
+  --primary-text: #1b5e20;
+  --on-primary: #ffffff;
+  --accent: #d4af37;
+  --accent-light: #e2c876;
+  --accent-dark: #80681b;
+  --on-accent: #111418;
+  --bg: #eff2ed;
+  --card: #ffffff;
+  --ink: #17201d;
+  --ink-2: #474e4b;
+  --muted: #6a6f6b;
+  --line: #dae3d9;
+  --line-strong: #c0d1c0;
+  --good: #1f6b3a;
+  --danger: #a3301a;
+  --warn: #9c4a14;
+  --warn-surface: #9c4a14;
+  --on-warn: #ffffff;
+  --danger-surface: #b3261e;
+  --on-danger: #ffffff;
+  --hint-strong: #020602;
+  --hint-text: #474e4b;
+  --accent-text: #1b5e20;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #37c142;
+    --accent-text: #ddc061;
+    --bg: #0d210e;
+    --card: #153218;
+    --ink: #e9e7e2;
+    --ink-2: #bdbfb8;
+    --muted: #91988d;
+    --line: #244c27;
+    --line-strong: #326736;
+    --good: #6fd08f;
+    --danger: #f08a73;
+    --warn: #f0a868;
+    --accent-dark: #ddc061;
+    --hint-strong: #ddc061;
+    --hint-text: #bdbfb8;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg, #f4f5f2); color: var(--ink, #1c2321); }
+header { background: var(--primary, #2f5d8a); color: var(--on-primary, #fff); border-bottom: 4px solid var(--accent, #d9a441); }
+header .wrap { display: flex; gap: 14px; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+header img { width: 48px; height: 48px; object-fit: contain; }
+header a { color: inherit; text-decoration: none; font-weight: 700; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+main { padding: 24px 0 40px; }
+h1 { font-family: var(--font-head, inherit); font-size: 1.7rem; line-height: 1.2; margin: 0 0 14px; }
+h2 { font-family: var(--font-head, inherit); font-size: 1.25rem; margin: 26px 0 8px; color: var(--primary-text, inherit); }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--primary-text, #2f5d8a); }
+code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
+.hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
+.gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
+.gruppe ul { padding-left: 1.2em; }
+.wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
+footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</a></div></header>
+<main class="wrap">
+<h1>Dokumente verwalten</h1><p class="wenn">Nur, wenn Dokumente eingeschaltet ist.</p><p>Auf dieser Seite stellst du Dokumente für die Mitglied bereit: Du lädst Dateien hoch, änderst Titel, Kategorie und Sichtbarkeit, ersetzt eine Datei durch eine neue Fassung und legst Kategorien an.</p>
+<figure class="hilfe-bild"><img src="bilder/dokumente-pflegen.jpg" alt="Die Seite Dokumente verwalten mit dem Formular Dokument hochladen" loading="lazy"><figcaption>Die Seite Dokumente verwalten mit dem Formular Dokument hochladen</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Intern</strong>, dann auf <strong>Dokumente</strong> und oben auf <strong>Dokumente verwalten</strong>. Den Knopf sieht nur, wer Dokumente pflegen darf (z. B. mit der Rolle „Dokumente verwalten“).</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>‹ Alle Dokumente</strong>: zurück zur Liste, wie die Mitglied sie sehen.</li><li><strong>Dokument hochladen</strong>: Formular für ein neues Dokument.</li><li><strong>Dokumente</strong>: alle Dokumente, nach Kategorien geordnet, mit <strong>Sortierung</strong>. Bei jedem stehen Kategorie, Stand, Art und Größe der Datei und für wen es sichtbar ist, dazu die Knöpfe <strong>Bearbeiten</strong>, <strong>Neue Fassung</strong> und <strong>Löschen</strong>.</li><li><strong>Kategorien</strong>: Feld <strong>Neue Kategorie</strong> mit dem Knopf <strong>Kategorie hinzufügen</strong> und darunter die Liste der Kategorien mit der Zahl ihrer Dokumente, <strong>Umbenennen</strong> und <strong>Löschen</strong>.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Ein Dokument hochladen</h3>
+<ol><li>Tippe bei <strong>Datei</strong> auf das Feld und wähle die Datei aus. Die App schlägt den Dateinamen als <strong>Titel</strong> vor.</li><li>Ändere bei Bedarf den <strong>Titel</strong>.</li><li>Wähle die <strong>Kategorie</strong> oder <strong>Ohne Kategorie</strong>.</li><li>Trage bei <strong>Stand</strong> das Datum des Dokuments ein. Vorbelegt ist heute.</li><li>Wähle bei <strong>Sichtbar für</strong>, wer es sieht: <strong>Alle Mitglieder</strong> oder <strong>Nur wer Dokumente pflegt</strong>.</li><li>Tippe auf <strong>Hochladen</strong>.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/dokumente-pflegen-hochladen.jpg" alt="Das ausgefüllte Formular Dokument hochladen" loading="lazy"><figcaption>Das ausgefüllte Formular Dokument hochladen</figcaption></figure>
+<p>Danach ist die Kategorie des neuen Dokuments aufgeklappt, und du siehst es in der Liste.</p>
+<h3>Titel, Kategorie, Stand oder Sichtbarkeit ändern</h3>
+<ol><li>Klappe die Kategorie auf und tippe beim Dokument auf <strong>Bearbeiten</strong>.</li><li>Ändere die Felder.</li><li>Tippe auf <strong>Speichern</strong>. Mit <strong>Abbrechen</strong> bleibt alles, wie es war.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/dokumente-pflegen-bearbeiten.jpg" alt="Ein Dokument wird bearbeitet" loading="lazy"><figcaption>Ein Dokument wird bearbeitet</figcaption></figure>
+<h3>Eine neue Fassung hochladen</h3>
+<ol><li>Tippe beim Dokument auf <strong>Neue Fassung</strong>.</li><li>Wähle die neue Datei aus. Die App speichert sie sofort; Titel, Kategorie, Stand und Sichtbarkeit bleiben.</li></ol>
+<p>Die alte Datei wird dabei gelöscht. Passt der Stand nicht mehr, ändere ihn danach mit <strong>Bearbeiten</strong>.</p>
+<h3>Ein Dokument löschen</h3>
+<ol><li>Tippe beim Dokument auf <strong>Löschen</strong>.</li><li>Bestätige die Nachfrage. Das Dokument und seine Datei sind dann weg.</li></ol>
+<h3>Kategorien anlegen, umbenennen und ordnen</h3>
+<ol><li>Trage unten bei <strong>Neue Kategorie</strong> einen Namen ein, z. B. „Protokolle“, und tippe auf <strong>Kategorie hinzufügen</strong>.</li><li>Zum Umbenennen tippe bei der Kategorie auf <strong>Umbenennen</strong>, trage den neuen Namen ein und bestätige.</li><li>Zum Ordnen ziehe eine Kategorie am Griff links (sechs Punkte) an die gewünschte Stelle. Am Computer geht das auch mit der Tastatur: Griff mit der Tab-Taste wählen, dann Pfeil hoch oder runter.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/dokumente-pflegen-kategorien.jpg" alt="Die Liste der Kategorien mit Griff, Umbenennen und Löschen" loading="lazy"><figcaption>Die Liste der Kategorien mit Griff, Umbenennen und Löschen</figcaption></figure>
+<p>In dieser Reihenfolge stehen die Kategorien auch bei den Mitgliedn.</p>
+<h2>Gut zu wissen</h2>
+<ul><li>Erlaubt sind PDF, Word, Excel, PowerPoint, OpenDocument sowie JPG- und PNG-Bilder, höchstens 20 MB. Nimmt der Server nur kleinere Dateien an, steht die Grenze unter dem Formular.</li><li>Der Titel darf höchstens 191 Zeichen lang sein. Zwei Kategorien dürfen nicht gleich heißen.</li><li><strong>Nur wer Dokumente pflegt</strong> eignet sich z. B. für Kassenberichte. Andere Mitglied sehen solche Dokumente gar nicht; in der Liste steht bei ihnen <strong>Eingeschränkt</strong>.</li><li>Löschst du eine Kategorie, bleiben ihre Dokumente erhalten und stehen danach unter <strong>Weitere Dokumente</strong>.</li><li>Wer ein Dokument auf dem Gerät gespeichert hatte, bekommt nach einer neuen Fassung beim nächsten Öffnen die neue. Gelöschte Dokumente entfernt die App auch von den Geräten der Mitglied, sobald sie dort die Liste der Dokumente öffnen.</li><li>Beim Hochladen gibt es keine Benachrichtigung.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="dokumente.html" data-seite="dokumente">Dokumente</a></li></ul>
+</main>
+<footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
+</body>
+</html>

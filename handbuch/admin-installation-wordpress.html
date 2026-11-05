@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Installation mit WordPress – Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+/* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
+:root {
+  --font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --primary: #1b5e20;
+  --primary-deep: #103613;
+  --primary-ink: #020602;
+  --on-primary-soft: #d6e2d7;
+  --accent-on-primary: #e2c876;
+  --bar-top: #103613;
+  --bar-bottom: #020602;
+  --on-bar-muted: #9fafa1;
+  --primary-text: #1b5e20;
+  --on-primary: #ffffff;
+  --accent: #d4af37;
+  --accent-light: #e2c876;
+  --accent-dark: #80681b;
+  --on-accent: #111418;
+  --bg: #eff2ed;
+  --card: #ffffff;
+  --ink: #17201d;
+  --ink-2: #474e4b;
+  --muted: #6a6f6b;
+  --line: #dae3d9;
+  --line-strong: #c0d1c0;
+  --good: #1f6b3a;
+  --danger: #a3301a;
+  --warn: #9c4a14;
+  --warn-surface: #9c4a14;
+  --on-warn: #ffffff;
+  --danger-surface: #b3261e;
+  --on-danger: #ffffff;
+  --hint-strong: #020602;
+  --hint-text: #474e4b;
+  --accent-text: #1b5e20;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #37c142;
+    --accent-text: #ddc061;
+    --bg: #0d210e;
+    --card: #153218;
+    --ink: #e9e7e2;
+    --ink-2: #bdbfb8;
+    --muted: #91988d;
+    --line: #244c27;
+    --line-strong: #326736;
+    --good: #6fd08f;
+    --danger: #f08a73;
+    --warn: #f0a868;
+    --accent-dark: #ddc061;
+    --hint-strong: #ddc061;
+    --hint-text: #bdbfb8;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg, #f4f5f2); color: var(--ink, #1c2321); }
+header { background: var(--primary, #2f5d8a); color: var(--on-primary, #fff); border-bottom: 4px solid var(--accent, #d9a441); }
+header .wrap { display: flex; gap: 14px; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+header img { width: 48px; height: 48px; object-fit: contain; }
+header a { color: inherit; text-decoration: none; font-weight: 700; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+main { padding: 24px 0 40px; }
+h1 { font-family: var(--font-head, inherit); font-size: 1.7rem; line-height: 1.2; margin: 0 0 14px; }
+h2 { font-family: var(--font-head, inherit); font-size: 1.25rem; margin: 26px 0 8px; color: var(--primary-text, inherit); }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--primary-text, #2f5d8a); }
+code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
+.hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
+.gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
+.gruppe ul { padding-left: 1.2em; }
+.wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
+footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</a></div></header>
+<main class="wrap">
+<h1>Installation mit WordPress</h1><p class="wenn">Nur mit WordPress.</p><p>Läuft eure Webseite mit WordPress, installierst du die App als Plugin, also als Erweiterung von WordPress. Die App wird dann ein Teil der Webseite: Benutzer, Anmeldung und News kommen aus WordPress.</p>
+<h2>Was du brauchst</h2>
+<ul><li>WordPress ab Version 6.2 und PHP ab Version 8.1. PHP ist die Programmiersprache, in der WordPress und die App auf dem Server laufen; die Version lässt sich meist im Kundenmenü des Hosters umstellen.</li><li>Ein Konto als Administrator der WordPress-Webseite.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Das Plugin installieren</h3>
+<ol><li>Lade auf der Download-Seite der Kompanie das <strong>Plugin</strong> herunter. Entpacke die Datei nicht.</li><li>Öffne in WordPress <strong>Plugins → Neues Plugin hinzufügen → Plugin hochladen</strong>, wähle die Datei und klicke auf <strong>Jetzt installieren</strong>.</li><li>Klicke auf <strong>Aktivieren</strong>. Die App ist dann unter <code>eure-webseite.de/app/</code> erreichbar.</li><li>Öffne die App. Als Administrator führt sie dich durch den <a href="admin-einrichtung.html" data-seite="admin-einrichtung">Einrichtungsassistenten</a>.</li></ol>
+<h3>Inhalte der App auf der Webseite zeigen</h3>
+<p>Auf Seiten und in Beiträgen von WordPress zeigen diese Kurzbefehle (Shortcodes) Inhalte der App. Du schreibst sie einfach in den Text der Seite:</p>
+<ul><li><code>[kompanie_termine]</code>: die öffentlichen Termine</li><li><code>[kompanie_galerie]</code>: die Galerie</li><li><code>[kompanie_aemter]</code>: die Ämter</li><li><code>[kompanie_mitglieder]</code>: die Mitglieder als Bildergalerie</li></ul>
+<h3>Ein Platzhalterbild für Mitglieder ohne Foto wählen</h3>
+<p>In <code>[kompanie_mitglieder]</code> stehen bei Personen ohne Foto ihre Anfangsbuchstaben. Stattdessen kann dort ein eigenes Bild stehen, z. B. eine Silhouette oder das Logo.</p>
+<ol><li>Öffne im WordPress-Backend unter <em>Einstellungen</em> die Seite der App und dort den Abschnitt <strong>Webseite: Mitglieder ohne Foto</strong>.</li><li>Klicke auf <strong>Bild aus der Mediathek wählen</strong>, lade ein Bild hoch oder wähle eines aus und übernimm es.</li><li>Es gilt sofort. Am besten passt ein Bild im Hochformat 2 : 3; andere Formate werden mittig zugeschnitten.</li></ol>
+<p><strong>Platzhalterbild entfernen</strong> bringt die Anfangsbuchstaben zurück, ebenso das Löschen des Bilds aus der Mediathek. In der App selbst bleiben die Anfangsbuchstaben.</p>
+<h2>Gut zu wissen</h2>
+<ul><li><strong>Einstellungen:</strong> Die Einstellungen der App findest du in der App unter <strong>Verwaltung → Einstellungen</strong>. Zusätzlich gibt es im WordPress-Backend unter <em>Einstellungen</em> eine Seite der App mit Wartungsmodus, Bereichen, Google-Zugang, Kalender, Galerie und dem Platzhalterbild. Sie hilft, wenn die App selbst nicht erreichbar ist.</li><li><strong>Admins:</strong> Admin in der App ist, wer in WordPress Administrator ist. Diese Rolle vergibst du nur in WordPress. Die Rolle anderer Personen wählst du in der App oder im WordPress-Benutzerprofil unter <strong>Rolle in der App</strong> (siehe <a href="admin-rollen-und-mitglieder.html" data-seite="admin-rollen-und-mitglieder">Rollen</a>). Wer in WordPress Benutzer anlegen darf (z. B. weil ein Plugin das einer Redakteursrolle gibt), darf das auch in der App und sieht damit E-Mail und Telefon der Mitglieder.</li><li><strong>Adresse:</strong> Ohne „schöne“ Permalinks (die lesbaren Adressen von WordPress) läuft die App unter einer längeren Adresse; WordPress zeigt sie dann oben im Backend an. Für die kurze Adresse <code>/app/</code> wählst du unter <strong>Einstellungen → Permalinks</strong> z. B. „Beitragsname“.</li><li><strong>News:</strong> Sie kommen immer aus den Beiträgen der Webseite; dafür gibt es nichts einzustellen.</li></ul>
+<ul><li><strong>HTTPS:</strong> Die Webseite sollte nur über <code>https://</code> laufen, sonst gehen Passwörter und Daten der Mitglieder unverschlüsselt durchs Netz. Das Zertifikat (und HSTS) richten WordPress bzw. der Hoster für die ganze Webseite ein.</li></ul>
+<p class="hinweis"><strong>Für Fortgeschrittene: Rechte aus WordPress.</strong> Die WordPress-Rechte <code>create_users</code>, <code>promote_users</code> und <code>manage_options</code> gelten in der App als <em>Konten anlegen</em>, <em>Rollen vergeben</em> und <em>Einstellungen</em>. Wer das nicht will, kürzt die Zuordnung mit dem Filter <code>kompanie_app_wp_capability_map</code>, z. B. <code>add_filter(&apos;kompanie_app_wp_capability_map&apos;, fn () =&gt; []);</code>. Administratoren der Webseite bleiben Admins der App.</p>
+<p class="hinweis"><strong>Für Fortgeschrittene: Server mit nginx.</strong> Auf den Webservern Apache und LiteSpeed sorgt das Plugin selbst dafür, dass die Dateien der App lange im Browser bleiben und komprimiert ankommen (über <code>.htaccess</code>). Läuft die Webseite mit <strong>nginx</strong>, bitte den Hoster, die Dateien unter <code>wp-content/plugins/kompanie-app/app/assets/</code> ein Jahr zwischenspeichern zu lassen (<code>Cache-Control: public, max-age=31536000, immutable</code>; ihr Name ändert sich mit jeder Version) und Textdateien komprimiert (gzip) auszuliefern. Die App läuft auch ohne, lädt beim ersten Öffnen aber langsamer.</p>
+<p class="hinweis"><strong>Für Fortgeschrittene: Hintergrundaufgaben (WP-Cron).</strong> Die Abgleiche von Kalender und Galerie, Benachrichtigungen und die tägliche Suche nach Updates erledigt die App über WP-Cron. WP-Cron läuft nur, wenn jemand die Webseite oder die App aufruft; auf wenig besuchten Webseiten kommen diese Aufgaben deshalb verspätet, Updates z. B. erst nach dem nächsten Besuch. Zuverlässiger ist ein Cronjob beim Hoster: Lege im Kundenmenü des Hosters zuerst einen Cronjob an, der alle 15 Minuten <code>https://eure-webseite.de/wp-cron.php</code> aufruft. Trage erst danach in der <code>wp-config.php</code> <code>define(&apos;DISABLE_WP_CRON&apos;, true);</code> ein; ohne den Cronjob laufen die Aufgaben sonst gar nicht mehr. Manche Hoster haben dafür eine eigene Einstellung im Kundenmenü.</p>
+<h2>Siehe auch</h2>
+<ul><li><a href="admin-einrichtung.html" data-seite="admin-einrichtung">Einrichtungsassistent</a></li><li><a href="admin-einstellungen.html" data-seite="admin-einstellungen">Einstellungen</a></li></ul>
+</main>
+<footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
+</body>
+</html>

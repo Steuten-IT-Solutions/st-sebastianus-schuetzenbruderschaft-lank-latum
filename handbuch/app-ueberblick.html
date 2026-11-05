@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Die App im Überblick – Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+/* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
+:root {
+  --font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --primary: #1b5e20;
+  --primary-deep: #103613;
+  --primary-ink: #020602;
+  --on-primary-soft: #d6e2d7;
+  --accent-on-primary: #e2c876;
+  --bar-top: #103613;
+  --bar-bottom: #020602;
+  --on-bar-muted: #9fafa1;
+  --primary-text: #1b5e20;
+  --on-primary: #ffffff;
+  --accent: #d4af37;
+  --accent-light: #e2c876;
+  --accent-dark: #80681b;
+  --on-accent: #111418;
+  --bg: #eff2ed;
+  --card: #ffffff;
+  --ink: #17201d;
+  --ink-2: #474e4b;
+  --muted: #6a6f6b;
+  --line: #dae3d9;
+  --line-strong: #c0d1c0;
+  --good: #1f6b3a;
+  --danger: #a3301a;
+  --warn: #9c4a14;
+  --warn-surface: #9c4a14;
+  --on-warn: #ffffff;
+  --danger-surface: #b3261e;
+  --on-danger: #ffffff;
+  --hint-strong: #020602;
+  --hint-text: #474e4b;
+  --accent-text: #1b5e20;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #37c142;
+    --accent-text: #ddc061;
+    --bg: #0d210e;
+    --card: #153218;
+    --ink: #e9e7e2;
+    --ink-2: #bdbfb8;
+    --muted: #91988d;
+    --line: #244c27;
+    --line-strong: #326736;
+    --good: #6fd08f;
+    --danger: #f08a73;
+    --warn: #f0a868;
+    --accent-dark: #ddc061;
+    --hint-strong: #ddc061;
+    --hint-text: #bdbfb8;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg, #f4f5f2); color: var(--ink, #1c2321); }
+header { background: var(--primary, #2f5d8a); color: var(--on-primary, #fff); border-bottom: 4px solid var(--accent, #d9a441); }
+header .wrap { display: flex; gap: 14px; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+header img { width: 48px; height: 48px; object-fit: contain; }
+header a { color: inherit; text-decoration: none; font-weight: 700; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+main { padding: 24px 0 40px; }
+h1 { font-family: var(--font-head, inherit); font-size: 1.7rem; line-height: 1.2; margin: 0 0 14px; }
+h2 { font-family: var(--font-head, inherit); font-size: 1.25rem; margin: 26px 0 8px; color: var(--primary-text, inherit); }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--primary-text, #2f5d8a); }
+code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
+.hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
+.gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
+.gruppe ul { padding-left: 1.2em; }
+.wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
+footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</a></div></header>
+<main class="wrap">
+<h1>Die App im Überblick</h1><p>Hier lernst du den Aufbau der App kennen: die Kopfleiste oben, die Leiste mit den Bereichen unten und die Hinweise, die zwischendurch erscheinen. So findest du dich auf jedem Bildschirm zurecht.</p>
+<figure class="hilfe-bild"><img src="bilder/app-ueberblick.jpg" alt="Startseite der App für ein Mitglied mit Kopfleiste oben und den Bereichen unten" loading="lazy"><figcaption>Startseite der App für ein Mitglied mit Kopfleiste oben und den Bereichen unten</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Öffne die Adresse der App im Browser oder tippe auf das Symbol der App auf deinem Startbildschirm. Die App startet mit dem ersten Bereich der unteren Leiste, meist <strong>Termine</strong>.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Logo und Titel</strong> (oben links): Der Titel nennt den Bildschirm, auf dem du gerade bist. Darunter steht, wenn du angemeldet bist, ein Gruß mit deinem Namen, sonst der Name der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V..</li><li><strong>Teilen-Symbol</strong> (oben, drei verbundene Punkte): verschickt einen Link auf den aktuellen Bildschirm, siehe unten.</li><li><strong>?</strong>: öffnet die Hilfe passend zum aktuellen Bildschirm.</li><li><strong>Mond bzw. Sonne</strong>: wechselt zwischen dunkler und heller Darstellung.</li><li><strong>Login</strong> (oben rechts, nur ohne Anmeldung): führt zur Anmeldung, siehe <a href="anmelden.html" data-seite="anmelden">Anmelden</a>.</li><li><strong>Untere Leiste</strong>: Hier wechselst du zwischen den Bereichen. Der Bereich, in dem du gerade bist, ist hervorgehoben. Hältst du das Handy quer, steht die Leiste links.</li></ul>
+<p>Welche Bereiche unten stehen, hängt davon ab, welche die St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V. nutzt und ob du angemeldet bist:</p>
+<ul><li><strong>Termine</strong>, <strong>News</strong> und <strong>Galerie</strong>: für alle, auch ohne Anmeldung.</li><li><strong>Mitglieder</strong>: für alle, wenn die St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V. die Liste nutzt. Nutzt sie nur die Ämter, heißt der Knopf <strong>Ämter</strong>.</li><li><strong>Dokumente</strong>: nur für angemeldete Mitglied.</li><li><strong>Intern</strong>: Für Mitglied (und wer das Recht <strong>Intern</strong> hat) stehen Mitglieder und Dokumente nicht einzeln unten, sondern zusammen unter <strong>Intern</strong>. Mitglied finden dort außerdem das Schwarzes Brett, die Dienstgrade und den Punktekatalog, wenn die St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V. sie nutzt.</li><li><strong>Verwaltung</strong>: nur, wenn du eine Aufgabe in der Verwaltung hast, z. B. Punkte vergeben.</li><li><strong>Meins</strong> (ganz rechts): deine eigenen Daten und dein Konto, sobald du angemeldet bist.</li></ul>
+<h2>Ohne Anmeldung</h2>
+<p>Ohne Anmeldung siehst du nur, was öffentlich ist: die öffentlichen Termine, die News, die öffentlichen Bilder der Galerie und, falls vorhanden, die Liste Mitglieder. Oben rechts steht <strong>Login</strong>. Manche Kompanien begrüßen Gäste auf der Startseite mit einem kurzen Text.</p>
+<figure class="hilfe-bild"><img src="bilder/app-ueberblick-gast.jpg" alt="Startseite ohne Anmeldung mit Begrüßung und dem Knopf Login" loading="lazy"><figcaption>Startseite ohne Anmeldung mit Begrüßung und dem Knopf Login</figcaption></figure>
+<h2>So gehst du vor</h2>
+<h3>Hilfe zum aktuellen Bildschirm öffnen</h3>
+<ol><li>Tippe oben auf <strong>?</strong>.</li><li>Die App zeigt die Anleitung zu dem Bildschirm, auf dem du gerade warst. Gibt es dazu keine eigene Anleitung, siehst du das Verzeichnis aller Hilfeseiten.</li><li>Mit <strong>‹ Alle Hilfeseiten</strong> kommst du zum Verzeichnis. Dort findest du mit <strong>Hilfe durchsuchen …</strong> eine Seite über ein Stichwort.</li></ol>
+<p>Die Hilfe zeigt dir nur die Seiten, die zu deinen Aufgaben und zu den Bereichen der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V. passen. Unten auf jeder Hilfeseite kannst du einen Fehler melden, siehe <a href="fehler-melden.html" data-seite="fehler-melden">Fehler melden</a>.</p>
+<h3>Einen Bildschirm als Link verschicken</h3>
+<ol><li>Öffne den Bildschirm, den du zeigen möchtest.</li><li>Tippe oben auf das Teilen-Symbol.</li><li>Auf dem Handy öffnet sich das Teilen-Menü, z. B. für WhatsApp oder E-Mail. Am Computer kopiert die App den Link; es erscheint „Link kopiert“.</li></ol>
+<p>Wer den Link öffnet, landet direkt auf diesem Bildschirm. Ist er nur für Angemeldete, bittet die App zuerst um die Anmeldung und öffnet ihn danach. Jede Person sieht dabei nur, was sie sehen darf; sonst öffnet die App ihre Startseite. Ein aufgeklappter Termin oder eine gewählte Sortierung gehört nicht zum Link.</p>
+<h3>Das Handy quer halten</h3>
+<ol><li>Dreh das Handy. Die App dreht sich mit, sofern die automatische Drehung des Handys eingeschaltet ist.</li><li>Quer steht die Leiste mit den Bereichen links, die Kopfleiste ist flacher und scrollt mit weg. Listen stehen in zwei Spalten, in Formularen stehen je zwei Felder nebeneinander.</li><li>Dreh das Handy zurück, und alles steht wieder wie gewohnt.</li></ol>
+<p>Hast du die App schon länger installiert und sie bleibt hochkant, öffne sie einmal neu; es kann bis zu einem Tag dauern, bis das Handy die Änderung übernimmt.</p>
+<h3>Zwischen hell und dunkel wechseln</h3>
+<ol><li>Tippe oben auf den Mond, um die dunkle Darstellung einzuschalten, oder auf die Sonne für die helle.</li><li>Wechselst du damit zu der Darstellung, die dein Gerät gerade hat, richtet sich die App wieder nach dem Gerät.</li></ol>
+<p>Fest einstellen kannst du die Darstellung unter <strong>Meins</strong> → <strong>Konto</strong>, siehe <a href="anmelden-und-konto.html" data-seite="anmelden-und-konto">Mein Konto</a>. Die Wahl gilt nur auf diesem Gerät.</p>
+<h2>Hinweise oben auf der Seite</h2>
+<p>Unter der Kopfleiste erscheinen manchmal Hinweise:</p>
+<ul><li><strong>Die App aufs Handy holen</strong>: Tippe auf <strong>So geht&apos;s</strong> für die bebilderte Anleitung oder, wenn dein Browser es anbietet, auf <strong>Installieren</strong>. Mit <strong>✕</strong> blendest du den Hinweis aus. Mehr dazu unter <a href="app-installieren.html" data-seite="app-installieren">Die App aufs Handy holen</a>.</li><li><strong>Schwarzes Brett</strong>: Angemeldete Mitglied und Personen mit dem internen Kalender (z. B. Anwärter) sehen hier dringende Nachrichten der Kompanie, Mitglied außerdem Umfragen, die sie noch nicht beantwortet haben. Mit <strong>×</strong> blendest du einen Eintrag auf diesem Gerät aus, mit <strong>Brett öffnen</strong> siehst du alle.</li><li><strong>Offline – angezeigt werden die zuletzt geladenen Daten.</strong>: Du hast gerade keine Internetverbindung. Was du zuletzt geladen hast, bleibt sichtbar.</li><li><strong>Diese Seite ist erst nach der Anmeldung zu sehen.</strong>: Du hast einen Link auf einen Bildschirm für Angemeldete geöffnet. Tippe auf <strong>Anmelden</strong>.</li></ul>
+<figure class="hilfe-bild"><img src="bilder/app-ueberblick-hinweis.jpg" alt="Hinweis „Die App aufs Handy holen“ mit dem Knopf „So geht&apos;s“" loading="lazy"><figcaption>Hinweis „Die App aufs Handy holen“ mit dem Knopf „So geht&apos;s“</figcaption></figure>
+<h2>Gut zu wissen</h2>
+<ul><li>Wird die App gerade gewartet, siehst du statt der Inhalte nur einen Hinweis darauf. Mit <strong>Erneut versuchen</strong> prüfst du, ob sie wieder da ist.</li><li>Die Bezeichnungen der Bereiche (z. B. <strong>Termine</strong>) legt jede Kompanie selbst fest. Deshalb können sie bei dir anders heißen als in anderen Apps.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="anmelden.html" data-seite="anmelden">Anmelden</a></li><li><a href="anmelden-und-konto.html" data-seite="anmelden-und-konto">Mein Konto</a></li><li><a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a></li><li><a href="app-installieren.html" data-seite="app-installieren">Die App aufs Handy holen</a></li></ul>
+</main>
+<footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
+</body>
+</html>

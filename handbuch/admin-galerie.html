@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galerie einrichten – Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+/* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
+:root {
+  --font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --primary: #1b5e20;
+  --primary-deep: #103613;
+  --primary-ink: #020602;
+  --on-primary-soft: #d6e2d7;
+  --accent-on-primary: #e2c876;
+  --bar-top: #103613;
+  --bar-bottom: #020602;
+  --on-bar-muted: #9fafa1;
+  --primary-text: #1b5e20;
+  --on-primary: #ffffff;
+  --accent: #d4af37;
+  --accent-light: #e2c876;
+  --accent-dark: #80681b;
+  --on-accent: #111418;
+  --bg: #eff2ed;
+  --card: #ffffff;
+  --ink: #17201d;
+  --ink-2: #474e4b;
+  --muted: #6a6f6b;
+  --line: #dae3d9;
+  --line-strong: #c0d1c0;
+  --good: #1f6b3a;
+  --danger: #a3301a;
+  --warn: #9c4a14;
+  --warn-surface: #9c4a14;
+  --on-warn: #ffffff;
+  --danger-surface: #b3261e;
+  --on-danger: #ffffff;
+  --hint-strong: #020602;
+  --hint-text: #474e4b;
+  --accent-text: #1b5e20;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #37c142;
+    --accent-text: #ddc061;
+    --bg: #0d210e;
+    --card: #153218;
+    --ink: #e9e7e2;
+    --ink-2: #bdbfb8;
+    --muted: #91988d;
+    --line: #244c27;
+    --line-strong: #326736;
+    --good: #6fd08f;
+    --danger: #f08a73;
+    --warn: #f0a868;
+    --accent-dark: #ddc061;
+    --hint-strong: #ddc061;
+    --hint-text: #bdbfb8;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg, #f4f5f2); color: var(--ink, #1c2321); }
+header { background: var(--primary, #2f5d8a); color: var(--on-primary, #fff); border-bottom: 4px solid var(--accent, #d9a441); }
+header .wrap { display: flex; gap: 14px; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+header img { width: 48px; height: 48px; object-fit: contain; }
+header a { color: inherit; text-decoration: none; font-weight: 700; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+main { padding: 24px 0 40px; }
+h1 { font-family: var(--font-head, inherit); font-size: 1.7rem; line-height: 1.2; margin: 0 0 14px; }
+h2 { font-family: var(--font-head, inherit); font-size: 1.25rem; margin: 26px 0 8px; color: var(--primary-text, inherit); }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--primary-text, #2f5d8a); }
+code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
+.hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
+.gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
+.gruppe ul { padding-left: 1.2em; }
+.wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
+footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</a></div></header>
+<main class="wrap">
+<h1>Galerie einrichten</h1><p>Hier verbindest du die Galerie mit einem Ordner in Google Drive. Die App zeigt die Fotos daraus als Alben und holt neue Bilder von selbst dazu.</p>
+<figure class="hilfe-bild"><img src="bilder/admin-galerie.jpg" alt="Die Seite Galerie in den Einstellungen" loading="lazy"><figcaption>Die Seite Galerie in den Einstellungen</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong>, dann auf <strong>Einstellungen</strong> und auf <strong>Galerie</strong>. Im <a href="admin-einrichtung.html" data-seite="admin-einrichtung">Einrichtungsassistenten</a> steht derselbe Abschnitt im Schritt für die Galerie.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Gelesen wird über …</strong>: welcher Google-Zugang genutzt wird, mit einem Verweis auf <strong>Google-Zugang</strong>. Gibt es noch keinen, steht das hier.</li><li><strong>Link zum Galerie-Ordner</strong>: die Adresse des Ordners in Google Drive.</li><li><strong>Letzter Abgleich: …</strong>: erscheint, wenn beim letzten Abgleich etwas schiefging, mit der Meldung.</li><li><strong>Jetzt abgleichen</strong>: liest den Ordner sofort ein (erscheint, sobald ein Ordner eingetragen ist).</li><li><strong>… Bilder ließen sich nicht laden – anzeigen</strong>: erscheint nur, wenn Bilder nicht geladen werden konnten.</li><li><strong>Speichern</strong>: übernimmt den Link.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Den Ordner in Google Drive vorbereiten</h3>
+<p>Lege in Google Drive einen Galerie-Ordner an. Darin kommt je Jahr ein Ordner und darin je Album ein Ordner mit den Bildern und Videos. Bilder und Videos im Unterordner <code>intern</code> eines Albums sehen nur Mitglieder. Freigeben musst du den Ordner nicht: Auch Videos spielt die App über den Google-Zugang ab.</p>
+<h3>Den Ordner verbinden</h3>
+<ol><li>Richte zuerst den <a href="admin-google.html" data-seite="admin-google">Google-Zugang</a> ein. Mit einem Dienstkonto gibst du den Galerie-Ordner vorher für dessen E-Mail-Adresse frei (Rolle Betrachter).</li><li>Öffne den Galerie-Ordner in Google Drive und kopiere die Adresse aus der Adresszeile des Browsers (z. B. <code>https://drive.google.com/drive/folders/…</code>).</li><li>Füge sie bei <strong>Link zum Galerie-Ordner</strong> ein und tippe auf <strong>Speichern</strong>.</li><li>Tippe auf <strong>Jetzt abgleichen</strong>. Die App liest die Alben, bereitet die Bilder auf und zeigt dabei den Fortschritt, am Ende zum Beispiel „Fertig: 3 Alben, 12 Bilder und Videos.“</li></ol>
+<figure class="hilfe-bild"><img src="bilder/admin-galerie-abgleich.jpg" alt="Nach dem Abgleich: wie viele Alben und Bilder gefunden wurden" loading="lazy"><figcaption>Nach dem Abgleich: wie viele Alben und Bilder gefunden wurden</figcaption></figure>
+<h3>Bilder ansehen, die sich nicht laden ließen</h3>
+<ol><li>Tippe auf <strong>… Bilder ließen sich nicht laden – anzeigen</strong>. Die Liste zeigt je Bild Dateiname, Album, Anzahl der Versuche, die Fehlermeldung und <strong>In Google Drive öffnen</strong>.</li><li>Lege das Bild als JPG in denselben Ordner in Google Drive und entferne das alte.</li><li>Tippe auf <strong>Alle erneut versuchen</strong>. Die App versucht alle noch einmal und gleicht danach ab.</li></ol>
+<h2>Gut zu wissen</h2>
+<ul><li>Was beim Abgleich nicht fertig wird, bereitet die App stündlich im Hintergrund weiter auf. Neue Bilder in Google Drive kommen ebenso stündlich dazu.</li><li>Videos zeigt die Galerie als MP4 oder WebM. Andere Formate (z. B. MOV vom iPhone, AVI) stehen in der Liste als „Videoformat nicht unterstützt“. Abhilfe: das Video als MP4 speichern (viele Handys bieten das beim Teilen oder Exportieren an) und in denselben Ordner legen.</li><li>Die App speichert Videos nicht auf dem Server, sie spielt sie beim Ansehen aus Google Drive ab. Nur ihr Vorschaubild kommt von Google und liegt neben den Bildern.</li><li>Videos starten schneller, wenn sie „fürs Web optimiert“ gespeichert sind. Viele Handys legen das Inhaltsverzeichnis eines Videos ans Ende der Datei; dann muss der Browser vor dem Start erst dorthin springen. Abhilfe: das Video vor dem Hochladen mit einem Programm wie HandBrake (Häkchen „Web Optimized“) neu speichern. Kurze Videos und eine kleinere Auflösung (z. B. 1080p statt 4K) laden ebenfalls schneller.</li><li>Kann der Server ein Format nicht lesen (z. B. RAW, TIFF, HEIC), nimmt die App das in RAW-Dateien eingebettete JPEG oder das Vorschaubild von Google. In der Liste bleiben vor allem beschädigte Dateien.</li><li>Die Galerie erscheint für die anderen erst, wenn der Bereich an und ein Ordner eingetragen ist (siehe <a href="admin-bereiche.html" data-seite="admin-bereiche">Bereiche</a>).</li><li>Wie der Abgleich zuletzt lief, zeigt auch die Ampel unter <a href="admin-zustand.html" data-seite="admin-zustand">Zustand und Updates</a>.</li><li>Mit WordPress gibt es dieselbe Einstellung auch im WordPress-Backend auf der Seite der App (Feld „Galerie-Ordner“, Knopf <strong>Galerie speichern</strong>).</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="admin-google.html" data-seite="admin-google">Google-Zugang</a></li></ul>
+</main>
+<footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
+</body>
+</html>

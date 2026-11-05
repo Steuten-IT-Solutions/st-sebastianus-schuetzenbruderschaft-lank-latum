@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google-Zugang – Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+/* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
+:root {
+  --font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --primary: #1b5e20;
+  --primary-deep: #103613;
+  --primary-ink: #020602;
+  --on-primary-soft: #d6e2d7;
+  --accent-on-primary: #e2c876;
+  --bar-top: #103613;
+  --bar-bottom: #020602;
+  --on-bar-muted: #9fafa1;
+  --primary-text: #1b5e20;
+  --on-primary: #ffffff;
+  --accent: #d4af37;
+  --accent-light: #e2c876;
+  --accent-dark: #80681b;
+  --on-accent: #111418;
+  --bg: #eff2ed;
+  --card: #ffffff;
+  --ink: #17201d;
+  --ink-2: #474e4b;
+  --muted: #6a6f6b;
+  --line: #dae3d9;
+  --line-strong: #c0d1c0;
+  --good: #1f6b3a;
+  --danger: #a3301a;
+  --warn: #9c4a14;
+  --warn-surface: #9c4a14;
+  --on-warn: #ffffff;
+  --danger-surface: #b3261e;
+  --on-danger: #ffffff;
+  --hint-strong: #020602;
+  --hint-text: #474e4b;
+  --accent-text: #1b5e20;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #37c142;
+    --accent-text: #ddc061;
+    --bg: #0d210e;
+    --card: #153218;
+    --ink: #e9e7e2;
+    --ink-2: #bdbfb8;
+    --muted: #91988d;
+    --line: #244c27;
+    --line-strong: #326736;
+    --good: #6fd08f;
+    --danger: #f08a73;
+    --warn: #f0a868;
+    --accent-dark: #ddc061;
+    --hint-strong: #ddc061;
+    --hint-text: #bdbfb8;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg, #f4f5f2); color: var(--ink, #1c2321); }
+header { background: var(--primary, #2f5d8a); color: var(--on-primary, #fff); border-bottom: 4px solid var(--accent, #d9a441); }
+header .wrap { display: flex; gap: 14px; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+header img { width: 48px; height: 48px; object-fit: contain; }
+header a { color: inherit; text-decoration: none; font-weight: 700; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+main { padding: 24px 0 40px; }
+h1 { font-family: var(--font-head, inherit); font-size: 1.7rem; line-height: 1.2; margin: 0 0 14px; }
+h2 { font-family: var(--font-head, inherit); font-size: 1.25rem; margin: 26px 0 8px; color: var(--primary-text, inherit); }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--primary-text, #2f5d8a); }
+code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
+.hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
+.gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
+.gruppe ul { padding-left: 1.2em; }
+.wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
+footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</a></div></header>
+<main class="wrap">
+<h1>Google-Zugang</h1><p>Über den Google-Zugang liest die App die Fotos der Galerie aus Google Drive und auf Wunsch einen privaten Google Kalender. Außerdem kann sie damit wöchentlich eine Datensicherung in Google Drive ablegen. Hier verbindest du die App einmal mit Google.</p>
+<figure class="hilfe-bild"><img src="bilder/admin-google.jpg" alt="Die Seite Google-Zugang" loading="lazy"><figcaption>Die Seite Google-Zugang</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong>, dann auf <strong>Einstellungen</strong> und auf <strong>Google-Zugang</strong>. Im <a href="admin-einrichtung.html" data-seite="admin-einrichtung">Einrichtungsassistenten</a> steht derselbe Abschnitt im Schritt für die Galerie bzw. den Kalender.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Weiterleitungs-URI (im OAuth-Client bei Google eintragen)</strong>: die Adresse, die du bei Google einträgst, mit dem Knopf <strong>Adresse kopieren</strong>.</li><li><strong>Client-ID</strong> und <strong>Clientschlüssel (Client-Secret)</strong>: die beiden Werte von Google, mit dem Knopf <strong>Speichern und mit Google verbinden</strong>.</li><li><strong>✓ Verbunden mit Google als …</strong>: steht statt der Felder, sobald die Verbindung besteht, mit <strong>Verbindung trennen</strong>. Dahinter steht, ob die App auch den Kalender lesen darf.</li><li><strong>Alternative: Dienstkonto mit JSON-Schlüssel</strong>: zum Aufklappen, für den zweiten Weg (siehe unten).</li></ul>
+<p class="hinweis">Für den Kalender allein brauchst du keinen Google-Zugang: Die geheime Adresse im iCal-Format geht ohne (siehe <a href="admin-kalender.html" data-seite="admin-kalender">Kalender einrichten</a>).</p>
+<h2>So gehst du vor</h2>
+<p>Empfohlen ist <strong>Mit Google verbinden</strong>. Dafür legst du einmal ein kleines Projekt bei Google an, trägst zwei Werte in der App ein und meldest dich bei Google an. Das dauert etwa 20 Minuten und kostet nichts.</p>
+<p class="hinweis"><strong>Für Fortgeschrittene:</strong> Google nennt das, was du anlegst, einen <em>OAuth-Client</em>: einen Zugang, mit dem eure App im Namen eures Google-Kontos lesen darf, nachdem du einmal zugestimmt hast. Angelegt wird er in der <em>Google Cloud Console</em>, der Verwaltungsseite von Google für solche Zugänge.</p>
+<h3>1. Projekt anlegen</h3>
+<ol><li>Öffne <a href="https://console.cloud.google.com/" target="_blank" rel="noopener noreferrer">console.cloud.google.com</a> und melde dich mit dem Google-Konto der Kompanie an. Beim ersten Mal bestätigst du die Nutzungsbedingungen.</li><li>Klicke oben links auf die <strong>Projektauswahl</strong> und dann auf <strong>Neues Projekt</strong>. Gib einen Namen ein, z. B. „Kompanie-App“, und klicke auf <strong>Erstellen</strong>.</li><li>Prüfe, dass oben das neue Projekt ausgewählt ist. Alle weiteren Schritte gelten für dieses Projekt.</li></ol>
+<h3>2. Schnittstellen einschalten</h3>
+<p>Öffne im Projekt diese Seiten und klicke jeweils auf <strong>Aktivieren</strong>:</p>
+<ul><li>für die Galerie und die Sicherungen: <a href="https://console.cloud.google.com/apis/library/drive.googleapis.com" target="_blank" rel="noopener noreferrer">Google Drive API</a></li><li>für einen privaten Kalender: <a href="https://console.cloud.google.com/apis/library/calendar-json.googleapis.com" target="_blank" rel="noopener noreferrer">Google Calendar API</a></li></ul>
+<h3>3. Google Auth Platform einrichten</h3>
+<ol><li>Öffne die <a href="https://console.cloud.google.com/auth/overview" target="_blank" rel="noopener noreferrer">Google Auth Platform</a> und klicke auf <strong>Jetzt starten</strong>.</li><li><strong>App-Informationen:</strong> Trage als <strong>App-Name</strong> z. B. den Namen der Kompanie ein und wähle bei <strong>E-Mail-Adresse für den Nutzersupport</strong> deine Adresse.</li><li><strong>Zielgruppe:</strong> <strong>Intern</strong> nur, wenn das Projekt zu einer Google-Organisation gehört (Google Workspace) und das verbundene Konto dazugehört. Mit einem normalen Google-Konto wählst du <strong>Extern</strong>.</li><li><strong>Kontaktdaten:</strong> Trage eine E-Mail-Adresse ein, stimme den Richtlinien zu und klicke auf <strong>Erstellen</strong>.</li><li>Nur bei <strong>Extern:</strong> Öffne links <strong>Zielgruppe</strong>, klicke unter „Veröffentlichungsstatus“ auf <strong>App veröffentlichen</strong> und bestätige. Der Status ist danach <strong>In Produktion</strong>. Bleibt er auf „Testen“, läuft die Verbindung nach 7 Tagen ab.</li></ol>
+<p class="hinweis">Unter <strong>Datenzugriff</strong> trägst du <strong>nichts</strong> ein. Dort eingetragene Berechtigungen verlangen eine Prüfung durch Google. Die App fragt ihre Berechtigungen beim Verbinden selbst an; das reicht.</p>
+<h3>4. Zugang bei Google anlegen</h3>
+<ol><li>Tippe in der App auf <strong>Adresse kopieren</strong>. Die Weiterleitungs-URI ist für jede Installation anders.</li><li>Öffne in der Google Auth Platform links <strong>Clients</strong> und klicke auf <strong>Client erstellen</strong>.</li><li>Wähle als <strong>Anwendungstyp</strong> <strong>Webanwendung</strong> und gib einen Namen ein, z. B. „Kompanie-App“.</li><li>Klicke unter <strong>Autorisierte Weiterleitungs-URIs</strong> auf <strong>URI hinzufügen</strong> und füge die kopierte Adresse genau so ein (ohne Leerzeichen, mit <code>https://</code>). Klicke auf <strong>Erstellen</strong>.</li><li>Google zeigt <strong>Client-ID</strong> und <strong>Clientschlüssel</strong>. Kopiere beide. Den Clientschlüssel zeigt Google nur jetzt einmal an; lade am besten gleich die JSON-Datei herunter und bewahre sie sicher auf. Geht er verloren, legst du beim Client einen neuen Schlüssel an.</li></ol>
+<p class="hinweis">Client-ID und Clientschlüssel gehören zusammen wie Benutzername und Passwort. Gib sie nicht weiter und verschicke sie nicht per E-Mail.</p>
+<h3>5. Mit Google verbinden</h3>
+<ol><li>Trage in der App die <strong>Client-ID</strong> und den <strong>Clientschlüssel (Client-Secret)</strong> ein.</li><li>Tippe auf <strong>Speichern und mit Google verbinden</strong>.</li><li>Melde dich bei Google mit dem Konto an, das den Galerie-Ordner und den Kalender sehen kann.</li><li>Google warnt: <strong>„Google hat diese App nicht überprüft“</strong>. Das ist bei einer eigenen App normal. Klicke auf <strong>Erweitert</strong> und dann auf <strong>Weiter zu …</strong>.</li><li>Google fragt nach den Berechtigungen: Lesen in Google Drive, Lesen in Google Kalender und eigene Dateien in Google Drive anlegen (für die Sicherungen). <strong>Setze alle Häkchen</strong> und klicke auf <strong>Weiter</strong>.</li><li>Google schickt dich zurück in die App. Dort steht <strong>✓ Verbunden mit Google als …</strong> und <strong>Es darf auch den Kalender lesen.</strong></li></ol>
+<figure class="hilfe-bild"><img src="bilder/admin-google-verbinden.jpg" alt="Client-ID und Clientschlüssel eingetragen, vor dem Verbinden" loading="lazy"><figcaption>Client-ID und Clientschlüssel eingetragen, vor dem Verbinden</figcaption></figure>
+<p>Steht stattdessen, dass es den Kalender noch nicht lesen darf, fehlte das Häkchen für den Kalender: Tippe auf <strong>Verbindung trennen</strong> und verbinde noch einmal. Client-ID und Clientschlüssel bleiben gespeichert; das Feld für den Clientschlüssel kannst du dann leer lassen.</p>
+<p>Meldet die App einen Fehler, steht die Ursache dabei. Häufig: Die Weiterleitungs-URI bei Google weicht ab, der Clientschlüssel stimmt nicht, das Häkchen für Google Drive fehlte oder die Anmeldung wurde abgebrochen. Die Client-ID endet auf <code>.apps.googleusercontent.com</code>.</p>
+<h3>6. Galerie und Kalender eintragen</h3>
+<p>Danach trägst du auf den Seiten <a href="admin-galerie.html" data-seite="admin-galerie">Galerie einrichten</a> den Galerie-Ordner und unter <a href="admin-kalender.html" data-seite="admin-kalender">Kalender einrichten</a> die Kalender-IDs ein.</p>
+<h3>Alternative: Dienstkonto mit JSON-Schlüssel</h3>
+<p>Statt „Mit Google verbinden“ geht auch ein <em>Dienstkonto</em>: ein eigenes Google-Konto nur für die App, das nichts sieht, was du ihm nicht freigibst. Es braucht keine Anmeldung, aber einen Schlüssel, den manche Google-Organisationen sperren. Sicherungen in Google Drive gehen damit nicht.</p>
+<ol><li>Lege wie oben ein Projekt an und schalte die Schnittstellen ein (Schritte 1 und 2).</li><li>Öffne <a href="https://console.cloud.google.com/iam-admin/serviceaccounts" target="_blank" rel="noopener noreferrer">IAM und Verwaltung → Dienstkonten</a> und klicke auf <strong>Dienstkonto erstellen</strong>. Gib einen Namen ein, klicke auf <strong>Erstellen und fortfahren</strong>, überspringe die beiden optionalen Schritte und klicke auf <strong>Fertig</strong>.</li><li>Klicke auf das neue Dienstkonto. Merke dir seine <strong>E-Mail-Adresse</strong> (endet auf <code>…iam.gserviceaccount.com</code>).</li><li>Öffne den Reiter <strong>Schlüssel</strong> → <strong>Schlüssel hinzufügen</strong> → <strong>Neuen Schlüssel erstellen</strong> → <strong>JSON</strong> → <strong>Erstellen</strong>. Der Browser lädt eine JSON-Datei herunter.</li><li>Gib in Google Drive den Galerie-Ordner für diese E-Mail-Adresse frei (Rolle <strong>Betrachter</strong>). Für einen Kalender: in Google Kalender beim Kalender <strong>⋮ → Einstellungen und Freigabe → Für bestimmte Personen oder Gruppen freigeben</strong>, Berechtigung <strong>Alle Termindetails sehen</strong>.</li><li>Klappe in der App <strong>Alternative: Dienstkonto mit JSON-Schlüssel</strong> auf, füge den Inhalt der JSON-Datei bei <strong>Schlüssel des Dienstkontos (JSON)</strong> ein und tippe auf <strong>Schlüssel speichern</strong>. Danach steht dort die E-Mail-Adresse des Dienstkontos.</li></ol>
+<p class="hinweis">Die JSON-Datei ist ein Zugangsschlüssel. Gib sie nicht weiter und lösche sie nach dem Einfügen von deinem Rechner. <strong>„Schlüssel erstellen ist deaktiviert“?</strong> In Organisationen von Google Workspace sperrt eine Richtlinie das oft. Dann bittest du den Admin der Organisation, die Richtlinie <code>iam.disableServiceAccountKeyCreation</code> für dieses Projekt aufzuheben, oder du nutzt „Mit Google verbinden“.</p>
+<p>Mit <strong>Schlüssel ersetzen</strong> trägst du einen neuen Schlüssel ein, mit <strong>Schlüssel entfernen</strong> löschst du ihn.</p>
+<h2>Gut zu wissen</h2>
+<ul><li>Besteht eine Verbindung mit Google, hat sie Vorrang vor dem Dienstkonto.</li><li>Mit „Mit Google verbinden“ darf die App alles lesen, was das verbundene Konto in Drive und Kalender sehen kann, liest aber nur den eingetragenen Galerie-Ordner und die eingetragenen Kalender. Schreiben darf sie nur in Dateien, die sie selbst angelegt hat (die Sicherungen).</li><li><strong>Verbindung trennen</strong> beendet den Zugriff. Ebenso endet er, wenn du in deinem Google-Konto unter „Sicherheit → Drittanbieter-Apps und -Dienste“ den Zugriff der App entfernst oder den Schlüssel des Dienstkontos bei Google löschst.</li><li>Wurde die Verbindung hergestellt, bevor es die Sicherungen in Google Drive gab, fehlt ihr die Berechtigung für eigene Dateien. Trenne sie und verbinde neu, wenn du die Sicherungen nutzen willst.</li><li>Mit WordPress gibt es den Google-Zugang auch im WordPress-Backend auf der Seite der App; dort steht dieselbe Weiterleitungs-URI.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="admin-galerie.html" data-seite="admin-galerie">Galerie einrichten</a></li><li><a href="admin-kalender.html" data-seite="admin-kalender">Kalender einrichten</a></li><li><a href="admin-updates-und-sicherung.html" data-seite="admin-updates-und-sicherung">Datensicherung</a></li></ul>
+</main>
+<footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
+</body>
+</html>

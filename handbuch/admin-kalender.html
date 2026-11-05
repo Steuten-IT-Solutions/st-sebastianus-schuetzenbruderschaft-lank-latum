@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalender einrichten – Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+/* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
+:root {
+  --font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --primary: #1b5e20;
+  --primary-deep: #103613;
+  --primary-ink: #020602;
+  --on-primary-soft: #d6e2d7;
+  --accent-on-primary: #e2c876;
+  --bar-top: #103613;
+  --bar-bottom: #020602;
+  --on-bar-muted: #9fafa1;
+  --primary-text: #1b5e20;
+  --on-primary: #ffffff;
+  --accent: #d4af37;
+  --accent-light: #e2c876;
+  --accent-dark: #80681b;
+  --on-accent: #111418;
+  --bg: #eff2ed;
+  --card: #ffffff;
+  --ink: #17201d;
+  --ink-2: #474e4b;
+  --muted: #6a6f6b;
+  --line: #dae3d9;
+  --line-strong: #c0d1c0;
+  --good: #1f6b3a;
+  --danger: #a3301a;
+  --warn: #9c4a14;
+  --warn-surface: #9c4a14;
+  --on-warn: #ffffff;
+  --danger-surface: #b3261e;
+  --on-danger: #ffffff;
+  --hint-strong: #020602;
+  --hint-text: #474e4b;
+  --accent-text: #1b5e20;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #37c142;
+    --accent-text: #ddc061;
+    --bg: #0d210e;
+    --card: #153218;
+    --ink: #e9e7e2;
+    --ink-2: #bdbfb8;
+    --muted: #91988d;
+    --line: #244c27;
+    --line-strong: #326736;
+    --good: #6fd08f;
+    --danger: #f08a73;
+    --warn: #f0a868;
+    --accent-dark: #ddc061;
+    --hint-strong: #ddc061;
+    --hint-text: #bdbfb8;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg, #f4f5f2); color: var(--ink, #1c2321); }
+header { background: var(--primary, #2f5d8a); color: var(--on-primary, #fff); border-bottom: 4px solid var(--accent, #d9a441); }
+header .wrap { display: flex; gap: 14px; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+header img { width: 48px; height: 48px; object-fit: contain; }
+header a { color: inherit; text-decoration: none; font-weight: 700; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+main { padding: 24px 0 40px; }
+h1 { font-family: var(--font-head, inherit); font-size: 1.7rem; line-height: 1.2; margin: 0 0 14px; }
+h2 { font-family: var(--font-head, inherit); font-size: 1.25rem; margin: 26px 0 8px; color: var(--primary-text, inherit); }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--primary-text, #2f5d8a); }
+code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
+.hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
+.gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
+.gruppe ul { padding-left: 1.2em; }
+.wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
+footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</a></div></header>
+<main class="wrap">
+<h1>Kalender einrichten</h1><p>Hier verbindest du den Kalender für Mitglieder mit eurem Google Kalender. Die App zeigt die Termine daraus angemeldeten Mitgliedern.</p>
+<figure class="hilfe-bild"><img src="bilder/admin-kalender.jpg" alt="Die Seite Kalender in den Einstellungen" loading="lazy"><figcaption>Die Seite Kalender in den Einstellungen</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong>, dann auf <strong>Einstellungen</strong> und auf <strong>Kalender</strong>. Im <a href="admin-einrichtung.html" data-seite="admin-einrichtung">Einrichtungsassistenten</a> steht derselbe Abschnitt im Schritt für den Kalender.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Kalender für Mitglieder</strong>: der Abschnitt mit einer kurzen Erklärung der beiden Wege.</li><li>Eine Zeile, wie der Kalender gerade eingerichtet ist, z. B. <strong>✓ Eingerichtet über die geheime iCal-Adresse.</strong> oder <strong>Noch kein Kalender eingerichtet.</strong></li><li><strong>Google-Kalender-IDs</strong>: für den Weg über den Google-Zugang.</li><li><strong>Geheime iCal-Adresse</strong> (oder, wenn schon eine gespeichert ist, <strong>Neue iCal-Adresse (ersetzt die bisherige)</strong>): für den Weg ohne Google-Zugang.</li><li><strong>Aktualisieren alle … Minuten</strong>: wie lange die App die geladenen Termine zeigt, bevor sie bei Google neu nachfragt (Standard 15). Für die Benachrichtigungen über neue und geänderte Termine fragt die App unabhängig davon alle 15 Minuten bei Google nach.</li><li><strong>Kalender testen</strong> und <strong>Entfernen</strong>: erscheinen, sobald ein Kalender eingerichtet ist.</li><li><strong>Speichern</strong>: übernimmt die Eingaben.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Kalender über die geheime iCal-Adresse verbinden (ohne Google-Zugang)</h3>
+<ol><li>Öffne in Google Kalender beim Kalender der Kompanie <strong>⋮ → Einstellungen und Freigabe</strong> und dort <strong>Kalender integrieren</strong>.</li><li>Kopiere die <strong>Geheime Adresse im iCal-Format</strong>.</li><li>Füge sie in der App bei <strong>Geheime iCal-Adresse</strong> ein und tippe auf <strong>Speichern</strong>.</li></ol>
+<h3>Kalender über den Google-Zugang verbinden (auch für private Kalender)</h3>
+<ol><li>Richte zuerst den <a href="admin-google.html" data-seite="admin-google">Google-Zugang</a> ein. Bei „Mit Google verbinden“ muss dabei das Häkchen für Google Kalender gesetzt sein; ein Dienstkonto braucht eine Freigabe des Kalenders („Alle Termindetails sehen“).</li><li>Kopiere in Google Kalender unter <strong>⋮ → Einstellungen und Freigabe → Kalender integrieren</strong> die <strong>Kalender-ID</strong>. Beim Hauptkalender eines Kontos ist das dessen E-Mail-Adresse.</li><li>Trage sie in der App bei <strong>Google-Kalender-IDs</strong> ein. Mehrere trennst du durch Komma.</li><li>Tippe auf <strong>Speichern</strong>.</li></ol>
+<h3>Einstellen, wie schnell Änderungen erscheinen</h3>
+<ol><li>Trage bei <strong>Aktualisieren alle … Minuten</strong> eine Zahl von 1 bis 1440 ein (1440 Minuten sind ein Tag).</li><li>Tippe auf <strong>Speichern</strong>. Der neue Wert gilt sofort, und die Termine werden neu geladen.</li></ol>
+<h3>Prüfen, ob der Kalender ankommt</h3>
+<ol><li>Tippe auf <strong>Kalender testen</strong>.</li><li>Die App zeigt, wie viele kommende Termine sie gefunden hat, z. B. „5 Termine gefunden, z. B. „Schützenfest“.“ Lehnt Google ab, nennt die Meldung die wahrscheinliche Ursache.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/admin-kalender-test.jpg" alt="Das Ergebnis von Kalender testen" loading="lazy"><figcaption>Das Ergebnis von Kalender testen</figcaption></figure>
+<h3>Den Kalender entfernen</h3>
+<ol><li>Tippe auf <strong>Entfernen</strong> und bestätige die Rückfrage. Alle Angaben zum Kalender werden gelöscht.</li></ol>
+<h2>Gut zu wissen</h2>
+<ul><li>Änderungen im Google Kalender, z. B. ein gelöschter Termin, erscheinen in der App spätestens nach der eingestellten Zeit. Kürzere Zeiten zeigen sie schneller, bedeuten aber mehr Abrufe bei Google, und das Öffnen der Termine dauert dann öfter länger. Zusätzlich erneuert die App den Kalender stündlich im Hintergrund. Sofort neu geladen wird beim Speichern und bei <strong>Kalender testen</strong>.</li><li>Die iCal-Adresse zeigt die App nach dem Speichern nicht wieder an. Eine neue Adresse ersetzt die bisherige.</li><li>Sind Kalender-IDs eingetragen und darf der Google-Zugang den Kalender lesen, gelten sie vor der iCal-Adresse.</li><li>Darf die Verbindung mit Google den Kalender nicht lesen, steht das auf dieser Seite und unter <a href="admin-zustand.html" data-seite="admin-zustand">Zustand und Updates</a>. Dann trennst du unter <strong>Google-Zugang</strong> die Verbindung und verbindest neu, mit dem Häkchen für den Kalender. Bis dahin gilt die iCal-Adresse, falls eingetragen.</li><li>Der Kalender erscheint für die anderen erst, wenn der Bereich an und ein Kalender eingerichtet ist (siehe <a href="admin-bereiche.html" data-seite="admin-bereiche">Bereiche</a>).</li><li>Mit WordPress gibt es dieselben Felder auch im WordPress-Backend auf der Seite der App (dort mit <strong>Speichern und testen</strong>), auch <strong>Aktualisieren alle … Minuten</strong>, dazu ein Feld für einen eigenen Google-API-Schlüssel für öffentliche Kalender. Ist er eingetragen, geht er vor.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="admin-google.html" data-seite="admin-google">Google-Zugang</a></li></ul>
+</main>
+<footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
+</body>
+</html>

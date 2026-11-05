@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mein Konto – Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+/* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
+:root {
+  --font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --primary: #1b5e20;
+  --primary-deep: #103613;
+  --primary-ink: #020602;
+  --on-primary-soft: #d6e2d7;
+  --accent-on-primary: #e2c876;
+  --bar-top: #103613;
+  --bar-bottom: #020602;
+  --on-bar-muted: #9fafa1;
+  --primary-text: #1b5e20;
+  --on-primary: #ffffff;
+  --accent: #d4af37;
+  --accent-light: #e2c876;
+  --accent-dark: #80681b;
+  --on-accent: #111418;
+  --bg: #eff2ed;
+  --card: #ffffff;
+  --ink: #17201d;
+  --ink-2: #474e4b;
+  --muted: #6a6f6b;
+  --line: #dae3d9;
+  --line-strong: #c0d1c0;
+  --good: #1f6b3a;
+  --danger: #a3301a;
+  --warn: #9c4a14;
+  --warn-surface: #9c4a14;
+  --on-warn: #ffffff;
+  --danger-surface: #b3261e;
+  --on-danger: #ffffff;
+  --hint-strong: #020602;
+  --hint-text: #474e4b;
+  --accent-text: #1b5e20;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #37c142;
+    --accent-text: #ddc061;
+    --bg: #0d210e;
+    --card: #153218;
+    --ink: #e9e7e2;
+    --ink-2: #bdbfb8;
+    --muted: #91988d;
+    --line: #244c27;
+    --line-strong: #326736;
+    --good: #6fd08f;
+    --danger: #f08a73;
+    --warn: #f0a868;
+    --accent-dark: #ddc061;
+    --hint-strong: #ddc061;
+    --hint-text: #bdbfb8;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg, #f4f5f2); color: var(--ink, #1c2321); }
+header { background: var(--primary, #2f5d8a); color: var(--on-primary, #fff); border-bottom: 4px solid var(--accent, #d9a441); }
+header .wrap { display: flex; gap: 14px; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+header img { width: 48px; height: 48px; object-fit: contain; }
+header a { color: inherit; text-decoration: none; font-weight: 700; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+main { padding: 24px 0 40px; }
+h1 { font-family: var(--font-head, inherit); font-size: 1.7rem; line-height: 1.2; margin: 0 0 14px; }
+h2 { font-family: var(--font-head, inherit); font-size: 1.25rem; margin: 26px 0 8px; color: var(--primary-text, inherit); }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--primary-text, #2f5d8a); }
+code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
+.hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
+.gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
+.gruppe ul { padding-left: 1.2em; }
+.wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
+footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</a></div></header>
+<main class="wrap">
+<h1>Mein Konto</h1><p>In deinem Konto stehen dein Name, deine Rolle, deine E-Mail-Adresse, deine Handynummer und deine Adresse. Hier stellst du die Benachrichtigungen und die Darstellung ein, änderst dein Passwort und meldest dich ab. Als Mitglied trägst du hier auch deinen Geburtstag und deinen Eintritt ein.</p>
+<figure class="hilfe-bild"><img src="bilder/anmelden-und-konto.jpg" alt="Mein Konto mit Name, Rolle und der Karte Geburtstag" loading="lazy"><figcaption>Mein Konto mit Name, Rolle und der Karte Geburtstag</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Meins</strong> und wähle oben im Menü <strong>Konto</strong>. Gibt es unter <strong>Meins</strong> für dich sonst nichts (z. B. als Anwärter), öffnet sich das Konto direkt, ohne Menü.</p>
+<figure class="hilfe-bild"><img src="bilder/anmelden-und-konto-menue.jpg" alt="Aufgeklapptes Menü unter Meins mit dem Eintrag Konto" loading="lazy"><figcaption>Aufgeklapptes Menü unter Meins mit dem Eintrag Konto</figcaption></figure>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Name und Rolle</strong>: dein Name und deine Rolle, z. B. Mitglied, und dein Foto, wenn jemand eines hochgeladen hat. Ändern kann das Foto, wer Mitglieder anlegen darf.</li><li><strong>Kontakt</strong>: deine E-Mail-Adresse, Handynummer und Adresse, wie die St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V. sie hat.</li><li><strong>Geburtstag</strong> (nur für Mitglied, wenn die St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V. Geburtstage nutzt): dein Geburtstag und wer ihn sieht.</li><li><strong>Eintritt</strong> (nur für Mitglied, wenn die St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V. die Liste Mitglieder nutzt): wann du eingetreten bist und wer das auf deiner Seite in der Liste sieht.</li><li><strong>Benachrichtigungen einstellen</strong>: worüber dich die App auf diesem Gerät benachrichtigt. Darunter, wenn die St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V. den Mailversand eingerichtet hat, der Schalter für Nachrichten vom Brett per E-Mail (anfangs an).</li><li><strong>Signatur</strong>: dein Gruß für Nachrichten am Brett, mit Text und Bildern (für Mitglied, Anwärter und alle, die am Brett schreiben). Mehr dazu steht auf der Hilfeseite <strong>Signatur</strong>.</li><li><strong>Darstellung</strong>: <strong>Wie Gerät</strong>, <strong>Hell</strong> oder <strong>Dunkel</strong>.</li><li><strong>App installieren</strong>: die Anleitung, wie du die App aufs Handy holst. Die Karte fehlt, wenn du die App schon installiert geöffnet hast.</li><li><strong>Passwort ändern</strong>: dein Passwort neu festlegen.</li><li><strong>Abmelden</strong>: dich auf diesem Gerät abmelden.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>E-Mail-Adresse, Handynummer und Adresse ändern</h3>
+<ol><li>Tippe in der Karte <strong>Kontakt</strong> auf <strong>Ändern</strong>.</li><li>Trage die neue <strong>E-Mail-Adresse</strong> bzw. <strong>Handynummer</strong> ein. Für die Handynummer wählst du links das Land (vorgegeben 🇩🇪 +49) und tippst die Nummer wie gewohnt, z. B. 0171 1234567. Ein leeres Feld entfernt die Angabe.</li><li>Für die <strong>Adresse</strong> wählst du das <strong>Land</strong> (vorgegeben 🇩🇪 Deutschland) und trägst <strong>Straße</strong>, <strong>Nr.</strong>, bei Bedarf einen <strong>Adresszusatz</strong> (z. B. c/o), <strong>PLZ</strong> und <strong>Ort</strong> ein. Sind alle Felder leer, ist keine Adresse hinterlegt.</li><li>Hast du die E-Mail-Adresse geändert, gib zur Bestätigung dein <strong>Aktuelles Passwort</strong> ein. Für Handynummer und Adresse brauchst du kein Passwort.</li><li>Tippe auf <strong>Speichern</strong>.</li></ol>
+<p>Die App bringt alles selbst in die richtige Form: Leerzeichen in der E-Mail-Adresse fallen weg, die Handynummer wird einheitlich gespeichert, z. B. +49 171 1234567. Bei der Adresse rückt die Hausnummer in ihr Feld, wenn du sie mit in die Straße schreibst („Hauptstraße 5a“), und die Postleitzahl wird geschrieben, wie im Land üblich (z. B. „1234 AB“ in den Niederlanden). Stimmt etwas nicht, steht es direkt unter dem Feld, etwa wenn die Postleitzahl nicht zum Land passt; bei einem vertippten Anbieter wie „gmial.com“ schlägt die App die richtige Adresse zum Antippen vor. Sehen können diese Angaben nur du und wer das Recht <strong>Persönliche Angaben sehen</strong> hat.</p>
+<h3>Deinen Geburtstag eintragen</h3>
+<ol><li>Wähle in der Karte <strong>Geburtstag</strong> <strong>Tag</strong> und <strong>Monat</strong>; das <strong>Jahr</strong> ist freiwillig.</li><li>Lege mit <strong>Anderen Mitgliedern zeigen</strong> und <strong>Alter anzeigen</strong> fest, was die anderen sehen.</li><li>Tippe auf <strong>Geburtstag speichern</strong>.</li></ol>
+<p>Alles Weitere zu den Schaltern steht auf der Hilfeseite <strong>Geburtstage</strong>.</p>
+<h3>Deinen Eintritt eintragen</h3>
+<ol><li>Trage in der Karte <strong>Eintritt</strong> unter <strong>Datum oder Jahr</strong> das Datum ein (z. B. 12.03.2005) oder nur das Jahr (z. B. 2005).</li><li>Wähle unter <strong>Auf meiner Seite unter „Mitglieder“</strong>, wer es auf deiner Seite sieht: <strong>Nicht anzeigen</strong>, <strong>Mitgliedern anzeigen</strong> oder <strong>Öffentlich anzeigen</strong> (jeder mit der Adresse der App, auch ohne Anmeldung).</li><li>Tippe auf <strong>Eintritt speichern</strong>.</li></ol>
+<p>Mit <strong>Entfernen</strong> löschst du den Eintritt wieder. Der Eintritt darf nicht in der Zukunft liegen.</p>
+<h3>Die Darstellung festlegen</h3>
+<ol><li>Tippe in der Karte <strong>Darstellung</strong> auf <strong>Hell</strong> oder <strong>Dunkel</strong>. Die App bleibt dann so, auch wenn dein Gerät umschaltet (z. B. abends in den Dunkelmodus).</li><li>Mit <strong>Wie Gerät</strong> (so ist es am Anfang eingestellt) wechselt die App mit deinem Gerät.</li></ol>
+<p>Die Wahl gilt nur auf diesem Gerät und bleibt auch nach dem Abmelden erhalten. Schnell umschalten geht auch oben mit dem Mond bzw. der Sonne.</p>
+<h3>Dein Passwort ändern</h3>
+<ol><li>Trage in der Karte <strong>Passwort ändern</strong> dein <strong>Aktuelles Passwort</strong> ein.</li><li>Trage das neue Passwort zweimal ein, unter <strong>Neues Passwort (mind. 8 Zeichen)</strong> und <strong>Neues Passwort wiederholen</strong>.</li><li>Tippe auf <strong>Passwort ändern</strong>.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/anmelden-und-konto-passwort.jpg" alt="Karte „Passwort ändern“ mit den drei Feldern" loading="lazy"><figcaption>Karte „Passwort ändern“ mit den drei Feldern</figcaption></figure>
+<p>Das neue Passwort muss mindestens 8 Zeichen lang sein, sich vom bisherigen unterscheiden und darf nicht mit einem Leerzeichen beginnen oder enden. Du bleibst auf diesem Gerät angemeldet; auf allen anderen Geräten musst du dich neu anmelden.</p>
+<h3>Deine Daten herunterladen</h3>
+<ol><li>Tippe in der Karte <strong>Meine Daten</strong> auf <strong>Meine Daten herunterladen</strong>.</li><li>Der Browser speichert eine Datei <code>meine-daten-&lt;Datum&gt;.json</code> mit allem, was die App über dich gespeichert hat: Konto, Rollen, Geburtstag, Foto und deine Einträge (z. B. Punkte, Anwesenheit, Antworten in Umfragen). Das ist deine Auskunft nach der DSGVO (Art. 15).</li></ol>
+<h3>Dich abmelden</h3>
+<ol><li>Tippe ganz unten auf <strong>Abmelden</strong>.</li><li>Die App meldet dich ab und löscht die Daten, die sie auf dem Gerät gespeichert hat.</li></ol>
+<h2>Gut zu wissen</h2>
+<ul><li>Abmelden braucht eine Internetverbindung. Ohne Netz bleibt alles, wie es ist.</li><li>Nach dem Abmelden bekommt dein Konto auf diesem Gerät keine Benachrichtigungen mehr.</li><li>Passwort vergessen? Ein Admin der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V. (oder wer Mitglieder anlegen darf) kann dir ein neues Startpasswort geben.</li><li>Die Einstellungen der App findest du als Admin nicht hier, sondern unter <strong>Verwaltung</strong>.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="anmelden.html" data-seite="anmelden">Anmelden</a></li><li><a href="benachrichtigungen.html" data-seite="benachrichtigungen">Benachrichtigungen</a></li><li><a href="app-installieren.html" data-seite="app-installieren">Die App aufs Handy holen</a></li></ul>
+</main>
+<footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
+</body>
+</html>

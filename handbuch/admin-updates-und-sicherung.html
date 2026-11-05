@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datensicherung – Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+/* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
+:root {
+  --font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --primary: #1b5e20;
+  --primary-deep: #103613;
+  --primary-ink: #020602;
+  --on-primary-soft: #d6e2d7;
+  --accent-on-primary: #e2c876;
+  --bar-top: #103613;
+  --bar-bottom: #020602;
+  --on-bar-muted: #9fafa1;
+  --primary-text: #1b5e20;
+  --on-primary: #ffffff;
+  --accent: #d4af37;
+  --accent-light: #e2c876;
+  --accent-dark: #80681b;
+  --on-accent: #111418;
+  --bg: #eff2ed;
+  --card: #ffffff;
+  --ink: #17201d;
+  --ink-2: #474e4b;
+  --muted: #6a6f6b;
+  --line: #dae3d9;
+  --line-strong: #c0d1c0;
+  --good: #1f6b3a;
+  --danger: #a3301a;
+  --warn: #9c4a14;
+  --warn-surface: #9c4a14;
+  --on-warn: #ffffff;
+  --danger-surface: #b3261e;
+  --on-danger: #ffffff;
+  --hint-strong: #020602;
+  --hint-text: #474e4b;
+  --accent-text: #1b5e20;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #37c142;
+    --accent-text: #ddc061;
+    --bg: #0d210e;
+    --card: #153218;
+    --ink: #e9e7e2;
+    --ink-2: #bdbfb8;
+    --muted: #91988d;
+    --line: #244c27;
+    --line-strong: #326736;
+    --good: #6fd08f;
+    --danger: #f08a73;
+    --warn: #f0a868;
+    --accent-dark: #ddc061;
+    --hint-strong: #ddc061;
+    --hint-text: #bdbfb8;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg, #f4f5f2); color: var(--ink, #1c2321); }
+header { background: var(--primary, #2f5d8a); color: var(--on-primary, #fff); border-bottom: 4px solid var(--accent, #d9a441); }
+header .wrap { display: flex; gap: 14px; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+header img { width: 48px; height: 48px; object-fit: contain; }
+header a { color: inherit; text-decoration: none; font-weight: 700; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+main { padding: 24px 0 40px; }
+h1 { font-family: var(--font-head, inherit); font-size: 1.7rem; line-height: 1.2; margin: 0 0 14px; }
+h2 { font-family: var(--font-head, inherit); font-size: 1.25rem; margin: 26px 0 8px; color: var(--primary-text, inherit); }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--primary-text, #2f5d8a); }
+code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
+.hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
+.gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
+.gruppe ul { padding-left: 1.2em; }
+.wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
+footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</a></div></header>
+<main class="wrap">
+<h1>Datensicherung</h1><p>Hier lädst du eine Sicherung aller Daten der App herunter, spielst eine Sicherung wieder ein, richtest ein Passwort für Sicherungen ein oder lässt die App jede Woche eine verschlüsselte Sicherung in Google Drive ablegen.</p>
+<figure class="hilfe-bild"><img src="bilder/admin-updates-und-sicherung.jpg" alt="Die Seite Datensicherung" loading="lazy"><figcaption>Die Seite Datensicherung</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong>, dann auf <strong>Einstellungen</strong> und auf <strong>Datensicherung</strong>.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>Datensicherung</strong>: was die Sicherung enthält, mit den Knöpfen <strong>Sicherung herunterladen</strong> (mit geprüftem Passwort für Sicherungen: <strong>Sicherung verschlüsselt herunterladen</strong>; vor der ersten Prüfung unverschlüsselt, weil ein vertipptes Passwort die Sicherung unbrauchbar machte) und <strong>Sicherung wiederherstellen …</strong>.</li><li><strong>Passwort für Sicherungen</strong>: ob eines eingerichtet ist, mit Fingerabdruck und den Knöpfen <strong>Passwort prüfen</strong>, <strong>Ändern</strong> und <strong>Entfernen</strong>.</li><li><strong>Sicherungen in Google Drive</strong>: der Schalter <strong>Wöchentlich in Google Drive sichern</strong>, darunter wann zuletzt gesichert wurde, <strong>Ordner öffnen</strong> und <strong>Jetzt in Google Drive sichern</strong>. Fehlt die nötige Verbindung zu Google, steht hier stattdessen, was zu tun ist.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Ein Passwort für Sicherungen einrichten</h3>
+<p>Mit diesem Passwort sind heruntergeladene Sicherungen und alle Sicherungen in Google Drive verschlüsselt: Wer die Datei findet, kann ohne das Passwort nichts darin lesen.</p>
+<ol><li>Überlege dir ein langes Passwort (mindestens 12 Zeichen, gern ein Satz) und bewahre es sicher auf, z. B. im Passwort-Manager oder ausgedruckt im Tresor der Kompanie.</li><li>Trage es unter <strong>Passwort für Sicherungen</strong> zweimal ein, setze das Häkchen <strong>Ich habe das Passwort sicher aufbewahrt</strong> und tippe auf <strong>Passwort einrichten</strong>.</li><li>Prüfe gleich danach und ab und zu mit <strong>Passwort prüfen</strong>, ob ihr es noch habt. Erst nach der ersten richtigen Prüfung (oder einer Wiederherstellung mit diesem Passwort) löscht die App in Google Drive ältere, unverschlüsselte Sicherungen; die mit einem früheren Passwort wechseln dann wie die übrigen durch.</li></ol>
+<p class="hinweis"><strong>Wichtig:</strong> Die App speichert das Passwort nicht. <strong>Ist es verloren, lässt sich keine verschlüsselte Sicherung mehr wiederherstellen, auch nicht von den Betreuern der App.</strong> Ein neues Passwort gilt nur für neue Sicherungen; ältere brauchen weiter das bisherige.</p>
+<h3>Eine Sicherung herunterladen</h3>
+<ol><li>Tippe auf <strong>Sicherung herunterladen</strong> bzw. <strong>Sicherung verschlüsselt herunterladen</strong>.</li><li>Der Browser speichert eine Datei <code>sicherung-&lt;Datum&gt;.json</code> (verschlüsselt: <code>sicherung-&lt;Datum&gt;.json.enc</code>). Bewahre sie an einem sicheren Ort auf, nicht nur auf dem Server.</li></ol>
+<h3>Sicherungen in Google Drive einschalten</h3>
+<ol><li>Verbinde die App unter <strong>Google-Zugang</strong> über <strong>Mit Google verbinden</strong> und setze dabei das Häkchen für eigene Dateien in Google Drive (siehe <a href="admin-google.html" data-seite="admin-google">Google-Zugang</a>).</li><li>Empfohlen: Richte ein <strong>Passwort für Sicherungen</strong> ein (siehe oben). Dann gehen die Sicherungen verschlüsselt nach Google Drive; ohne Passwort unverschlüsselt (lesbar für jeden, der den Ordner öffnen kann).</li><li>Schalte hier <strong>Wöchentlich in Google Drive sichern</strong> ein.</li><li>Willst du gleich eine Sicherung haben, tippe auf <strong>Jetzt in Google Drive sichern</strong>.</li></ol>
+<h3>Eine Sicherung wiederherstellen</h3>
+<ol><li>Tippe auf <strong>Sicherung wiederherstellen …</strong>.</li><li>Wähle die Sicherungsdatei. Liegt sie in Google Drive, lädst du sie vorher von dort herunter.</li><li>Bestätige die Rückfrage. Ist die Sicherung verschlüsselt, gib das Passwort für Sicherungen ein, das beim Erstellen der Sicherung galt, und tippe auf <strong>Wiederherstellen</strong>.</li><li>Die Sicherung ersetzt <strong>alle</strong> Daten der App; danach lädt die App neu.</li></ol>
+<h2>Gut zu wissen</h2>
+<ul><li><strong>Inhalt:</strong> Die Sicherung enthält alle Daten der App, die Einstellungen, die Zugangsschlüssel und die Konten (Passwörter nur als Prüfwerte), dazu die Dateien der Dokumente, die Abzeichen der Dienstgrade und die Anmeldungen der Geräte für Benachrichtigungen. Mit WordPress sind alle Benutzer der Webseite dabei. Behandle eine unverschlüsselte Datei wie ein Passwort.</li><li><strong>Verschlüsselung:</strong> Das Passwort für Sicherungen gehört zu dieser Installation und kommt nicht mit einer Sicherung zurück. Nach einem Umzug auf einen neuen Server richtest du es dort neu ein. Die Sicherungen vor Updates auf dem Server bleiben unverschlüsselt: Sie liegen neben der Datenbank, und ein Wiederherstellen soll auch ohne Passwort möglich sein.</li><li><strong>Nicht enthalten:</strong> die Fotos der Galerie (die App holt sie danach neu aus Google Drive; bei vielen Fotos dauert das einige Stunden), wartende Fehlermeldungen und der Zustand dieser Installation (z. B. Update-Stand, Fehlerprotokoll). Mit WordPress gehören Beiträge, Seiten, Design und andere Plugins zu WordPress selbst; dafür braucht es eine Sicherung von WordPress bzw. vom Hoster.</li><li><strong>Automatische Sicherungen vor Updates:</strong> Vor jedem Update sichert die App auf dem Server. Diese Sicherungen sind mit dem Server verloren; sind die Sicherungen in Google Drive eingeschaltet, kommt jede davon zusätzlich in den Ordner dort (die letzten fünf; mit Passwort für Sicherungen verschlüsselt als <code>vor-update-&lt;Datum&gt;-&lt;Kennung des Passworts&gt;-&lt;Version&gt;.json.enc</code>, sonst als <code>vor-update-&lt;Datum&gt;-&lt;Version&gt;.json</code>). Klappt das nicht, fragt die App vor dem Update nach (siehe <a href="admin-zustand.html" data-seite="admin-zustand">Zustand und Updates</a>). Ohne Google Drive die Sicherungen deshalb auch herunterladen. Die Ampel unter <a href="admin-zustand.html" data-seite="admin-zustand">Zustand und Updates</a> wird gelb, wenn 30 Tage lang keine Sicherung heruntergeladen oder in Google Drive abgelegt wurde.</li><li><strong>Google Drive:</strong> Die App legt im verbundenen Google-Konto einen eigenen Ordner an, lädt einmal pro Woche eine Sicherung hoch und behält die letzten acht; eine Sicherung vor einem Update zählt dabei als die der Woche. Sie sieht und ändert dort nur Dateien, die sie selbst angelegt hat. Scheitert das Hochladen (z. B. weil der Speicher voll ist), steht der Grund hier und in der Ampel; die App versucht es am nächsten Tag wieder. Mit einem Dienstkonto geht das nicht. Ohne Passwort für Sicherungen lädt die App sie unverschlüsselt hoch (<code>.json</code>), mit Passwort verschlüsselt (<code>.json.enc</code>). Ältere, unverschlüsselte Sicherungen im Ordner löscht die App, sobald die erste verschlüsselte dort liegt und das Passwort einmal mit <strong>Passwort prüfen</strong> bestätigt ist; bis dahin behält sie auch verschlüsselte Sicherungen mit einem früheren Passwort. Gib den Ordner trotzdem nicht frei.</li><li><strong>Wiederherstellen ohne WordPress:</strong> geht auch auf einer neuen Installation, z. B. beim Umzug, aber nicht aus einer Sicherung der WordPress-Version. Danach melden sich alle neu an.</li><li><strong>Wiederherstellen mit WordPress:</strong> geht nur auf derselben Webseite (Adresse). Fehlende Konten legt die App dabei mit ihrer bisherigen Nummer wieder an; alle melden sich mit ihrem bisherigen Benutzernamen und Passwort an. Vorhandene Konten behalten Anmeldedaten und E-Mail und bekommen nur ihre Rolle in der App aus der Sicherung. Gehört eine Konto-Nummer aus der Sicherung inzwischen jemand anderem, bricht das Wiederherstellen ab und nennt das Konto; geändert wird dann nichts.</li><li>Eine Sicherung aus einer neueren Version lässt sich erst einspielen, wenn die App aktualisiert ist. Rückgängig machen lässt sich ein Wiederherstellen nur mit einer anderen Sicherung.</li></ul>
+<h3>Nach dem Verlust der Webseite (WordPress)</h3>
+<ol><li>Installiere WordPress unter derselben Adresse neu. Lege den Administrator mit <strong>Benutzername und E-Mail deines bisherigen Kontos</strong> an (oder mit einem Namen und einer E-Mail, die es bisher nicht gab).</li><li>Installiere das Plugin der Kompanie und öffne die App.</li><li>Spiele unter <strong>Einstellungen → Datensicherung</strong> die neueste Sicherung ein.</li></ol>
+<h2>Siehe auch</h2>
+<ul><li><a href="admin-zustand.html" data-seite="admin-zustand">Zustand und Updates</a></li><li><a href="admin-google.html" data-seite="admin-google">Google-Zugang</a></li></ul>
+</main>
+<footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
+</body>
+</html>

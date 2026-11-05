@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mitglied anlegen – Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+/* Automatisch erzeugt aus kompanie.json – nicht von Hand ändern. */
+:root {
+  --font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --primary: #1b5e20;
+  --primary-deep: #103613;
+  --primary-ink: #020602;
+  --on-primary-soft: #d6e2d7;
+  --accent-on-primary: #e2c876;
+  --bar-top: #103613;
+  --bar-bottom: #020602;
+  --on-bar-muted: #9fafa1;
+  --primary-text: #1b5e20;
+  --on-primary: #ffffff;
+  --accent: #d4af37;
+  --accent-light: #e2c876;
+  --accent-dark: #80681b;
+  --on-accent: #111418;
+  --bg: #eff2ed;
+  --card: #ffffff;
+  --ink: #17201d;
+  --ink-2: #474e4b;
+  --muted: #6a6f6b;
+  --line: #dae3d9;
+  --line-strong: #c0d1c0;
+  --good: #1f6b3a;
+  --danger: #a3301a;
+  --warn: #9c4a14;
+  --warn-surface: #9c4a14;
+  --on-warn: #ffffff;
+  --danger-surface: #b3261e;
+  --on-danger: #ffffff;
+  --hint-strong: #020602;
+  --hint-text: #474e4b;
+  --accent-text: #1b5e20;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #37c142;
+    --accent-text: #ddc061;
+    --bg: #0d210e;
+    --card: #153218;
+    --ink: #e9e7e2;
+    --ink-2: #bdbfb8;
+    --muted: #91988d;
+    --line: #244c27;
+    --line-strong: #326736;
+    --good: #6fd08f;
+    --danger: #f08a73;
+    --warn: #f0a868;
+    --accent-dark: #ddc061;
+    --hint-strong: #ddc061;
+    --hint-text: #bdbfb8;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg, #f4f5f2); color: var(--ink, #1c2321); }
+header { background: var(--primary, #2f5d8a); color: var(--on-primary, #fff); border-bottom: 4px solid var(--accent, #d9a441); }
+header .wrap { display: flex; gap: 14px; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+header img { width: 48px; height: 48px; object-fit: contain; }
+header a { color: inherit; text-decoration: none; font-weight: 700; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+main { padding: 24px 0 40px; }
+h1 { font-family: var(--font-head, inherit); font-size: 1.7rem; line-height: 1.2; margin: 0 0 14px; }
+h2 { font-family: var(--font-head, inherit); font-size: 1.25rem; margin: 26px 0 8px; color: var(--primary-text, inherit); }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--primary-text, #2f5d8a); }
+code { background: var(--line, #e3e6e1); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; overflow-wrap: anywhere; }
+.hinweis { background: var(--card, #fff); border-left: 4px solid var(--accent, #d9a441); padding: 10px 14px; border-radius: 6px; }
+.gruppe { margin-top: 26px; }
+.hilfe-bild { margin: 16px 0; text-align: center; }
+.hilfe-bild img { max-width: min(100%, 360px); height: auto; border: 1px solid var(--line, #e3e6e1); border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
+.hilfe-bild figcaption { color: var(--muted, #5b6560); font-size: 0.85rem; margin-top: 6px; }
+.gruppe ul { padding-left: 1.2em; }
+.wenn { color: var(--muted, #5b6560); font-size: 0.9rem; }
+footer { color: var(--muted, #5b6560); font-size: 0.85rem; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../logo.png" alt=""><a href="index.html">Handbuch der App der St. Sebastianus Schützenbruderschaft von 1475 Lank-Latum e.V.</a></div></header>
+<main class="wrap">
+<h1>Mitglied anlegen</h1><p>Hier legst du ein neues Konto für eine Person an. Die App erzeugt dabei ein Startpasswort, das du der Person persönlich weitergibst.</p>
+<figure class="hilfe-bild"><img src="bilder/mitglieder-anlegen.jpg" alt="Formular „Mitglied anlegen“" loading="lazy"><figcaption>Formular „Mitglied anlegen“</figcaption></figure>
+<h2>So öffnest du die Seite</h2>
+<p>Tippe unten auf <strong>Verwaltung</strong>, dann auf <strong>Mitglieder</strong> und über der Liste auf <strong>+ Mitglied anlegen</strong>.</p>
+<h2>Was du hier siehst</h2>
+<ul><li><strong>‹ Alle Mitglieder</strong>: zurück zur Liste.</li><li><strong>Mehrere auf einmal anlegen</strong>: eine Liste für mehrere Personen (siehe <a href="mitglieder-mehrere-anlegen.html" data-seite="mitglieder-mehrere-anlegen">Mehrere Mitglieder anlegen</a>).</li><li><strong>Aus Datei importieren (Excel oder CSV)</strong>: eine bestehende Mitgliederliste übernehmen (siehe <a href="mitglieder-import.html" data-seite="mitglieder-import">Mitglieder importieren</a>).</li><li><strong>Vorname</strong> und <strong>Nachname</strong>, <strong>Benutzername (optional)</strong>, <strong>E-Mail (optional)</strong>, <strong>Handynummer (optional)</strong> und <strong>Adresse (optional)</strong> mit Land, Straße, Nr., Adresszusatz, PLZ und Ort.</li><li><strong>Rolle</strong>: nur, wenn ein Admin weitere Rollen für neue Konten freigegeben hat (z. B. Anwärter). Sonst werden neue Konten Mitglied.</li><li><strong>Punkte (Anfangsbestand, optional)</strong> mit <strong>Stand vom</strong> und <strong>Dienstgrad (optional)</strong>: nur für Mitglied und nur, wenn du auch Punkte bzw. Dienstgrade verwalten darfst. Gedacht für die Übernahme bestehender Mitglieder.</li><li><strong>Geburtstag (optional)</strong> mit Tag, Monat und Jahr: nur, wenn die Kompanie Geburtstage nutzt.</li><li><strong>Foto (optional)</strong> mit <strong>Foto auswählen</strong>.</li><li><strong>Mitglied anlegen</strong>: legt das Konto an.</li></ul>
+<h2>So gehst du vor</h2>
+<h3>Ein Mitglied anlegen</h3>
+<ol><li>Trage <strong>Vorname</strong> und <strong>Nachname</strong> ein.</li><li>Trage, wenn gewünscht, Benutzername, E-Mail, Handynummer, Adresse, Geburtstag und die übrigen Angaben ein, und wähle mit <strong>Foto auswählen</strong> ein Foto.</li><li>Tippe auf <strong>Mitglied anlegen</strong>.</li><li>Die App zeigt die Zugangsdaten: den Link zum Installieren der App, Benutzername und Passwort. Tippe auf <strong>Ausdrucken</strong> (ein Zettel je Person), <strong>Zugangsdaten kopieren</strong> oder <strong>Teilen …</strong> und gib sie persönlich weiter.</li><li>Mit <strong>Weiteres Mitglied</strong> legst du gleich das nächste an; <strong>‹ Zur Mitgliederliste</strong> führt zurück.</li></ol>
+<figure class="hilfe-bild"><img src="bilder/mitglieder-anlegen-zugangsdaten.jpg" alt="Zugangsdaten nach dem Anlegen" loading="lazy"><figcaption>Zugangsdaten nach dem Anlegen</figcaption></figure>
+<h2>Gut zu wissen</h2>
+<ul><li>Nur der Vorname ist Pflicht; ohne Nachnamen geht es z. B. für ein Konto wie „Kassenwart“.</li><li>Ohne Benutzernamen bildet die App ihn aus dem Namen. Ein Benutzername darf nur Buchstaben (a–z), Ziffern sowie . _ - @ enthalten. Benutzername und E-Mail dürfen nicht schon vergeben sein.</li><li>Handynummer und Adresse prüft die App wie unter <strong>Meins → Konto</strong>, z. B. ob die Postleitzahl zum Land passt. Ist etwas ungültig, wird das Konto nicht angelegt.</li><li>Persönliche Angaben (E-Mail-Adresse, Handynummer, Adresse, Geburtstag) trägst du beim Anlegen ein; danach sieht sie auf der Seite des Mitglieds nur, wer das Recht <strong>Persönliche Angaben sehen</strong> hat, und ändern darf sie, wer <strong>Persönliche Angaben pflegen</strong> hat. Die E-Mail-Adresse siehst du weiter unter <strong>Konto und Rolle</strong>. Tippst du dort auf die Adresse, zeigt die Karten-App den Ort: Auf Android wählst du die App aus (z. B. Google Maps oder Waze), auf iPhone und Mac öffnet sich Apple Karten, am PC Google Maps.</li><li>Das Startpasswort steht <strong>nur dieses eine Mal</strong> da. Eine E-Mail verschickt die App nicht. <strong>Teilen …</strong> gibt es nur, wenn dein Gerät es kann.</li><li>Andere Rollen vergibt danach, wer Rollen vergeben darf (unter <strong>Konto und Rolle</strong> auf der Seite des Mitglieds).</li><li>Wie die neue Person die App aufs Handy holt und sich anmeldet, steht unter <a href="app-installieren.html" data-seite="app-installieren">App installieren</a> und <a href="anmelden-und-konto.html" data-seite="anmelden-und-konto">Mein Konto</a>.</li><li>Bitte lade ein Foto nur mit dem Einverständnis der Person hoch. Erlaubt sind JPG, PNG und WebP.</li></ul>
+<h2>Siehe auch</h2>
+<ul><li><a href="mitgliederliste.html" data-seite="mitgliederliste">Mitgliederliste</a></li><li><a href="mitglied-uebersicht.html" data-seite="mitglied-uebersicht">Seite eines Mitglieds</a></li><li><a href="ehemalige-mitglieder.html" data-seite="ehemalige-mitglieder">Ehemalige</a></li></ul>
+</main>
+<footer class="wrap">Dieses Handbuch beschreibt alle Bereiche der App. Welche eure Kompanie nutzt, legt ihr Admin fest. <a href="../index.html">Zur Download-Seite</a></footer>
+</body>
+</html>
