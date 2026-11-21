@@ -42,5 +42,6 @@
   "font": "System",
   "themeColor": "#1b5e20",
   "backgroundColor": "#eff2ed",
-  "legal": {}
+  "legal": {},
+  "translations": {}
 }
